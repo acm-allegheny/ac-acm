@@ -1,5 +1,6 @@
 ---
-title: "ACM Guides"
+title: "Allegheny College CIS Course Tech Stack Guides"
+subtitle: "Spring Semester, 2024-2025 Academic Year"
 listing:
   contents: posts
   sort: "date desc"
@@ -11,27 +12,24 @@ page-layout: full
 title-block-banner: true
 ---
 
-# **Allegheny College CIS Course Tech Stack Guide**
-*Spring Semester, 2024-2025 Academic Year*
-
-## **Introduction**
+# **Introduction**
 
 Welcome to the *Allegheny College CIS Course Tech Stack Guide* for the Spring semester of the 2024-2025 academic year! This document was created by the Allegheny College ACM Student Chapter as part of our "SOS (Set-up Our Students) Week" initiative. It is designed to help students enrolled in Computer and Information Science (CIS) courses get set up with the necessary tools and software for their classes.
 
 Our goal is to make the setup process simple and stress-free, so you can focus on learning and excelling in your coursework. Whether you’re a beginner or an experienced programmer, this guide is here to provide step-by-step instructions, useful tips, and links to resources for all the tools you’ll need.
 
 
-### **General Setup Resources**
+## **General Setup Resources**
 Below are detailed installation steps for commonly required tools, broken down by operating system. These tools will be used for ACM events and workshops and are also general tools widely used across the Computer and Information Science department. Following these setup instructions will ensure you are prepared for your coursework and extracurricular programming activities.
 
 
-## ACM Required Software
+# ACM Required Software
 
-### **Python**
+## **Python**
 
 ---
 
-#### **Windows**
+### **Windows**
 
 1. Download Python 3.12.5 from the [official Python website](https://www.python.org/downloads/release/python-3125/).
 2. Run the installer. During installation:
@@ -48,7 +46,7 @@ Below are detailed installation steps for commonly required tools, broken down b
      ```
    - Ensure it outputs `Python 3.12.5`.
 
-#### **Linux (Ubuntu)**
+### **Linux (Ubuntu)**
 
 To install Python 3.12.5 from source:
 
@@ -84,7 +82,7 @@ To install Python 3.12.5 from source:
    ```
    Ensure it outputs `Python 3.12.5`.
 
-#### **macOS**
+### **macOS**
 
 1. Download Python 3.12.5 from the [official Python website](https://www.python.org/downloads/release/python-3125/).
 2. Open the downloaded `.pkg` file and follow the on-screen installation instructions.
@@ -101,11 +99,11 @@ Python 3.12.5 will be the default version used by the ACM Student Chapter for ev
 
 ---
 
-### **Visual Studio Code (VSCode)**
+## **Visual Studio Code (VSCode)**
 
 ---
 
-#### **Windows**
+### **Windows**
 
 1. Download the installer from the [official VSCode website](https://code.visualstudio.com/).
 2. Run the installer and follow the prompts.
@@ -120,7 +118,7 @@ Python 3.12.5 will be the default version used by the ACM Student Chapter for ev
      - "Ruff"
    - Click **"Install"** for each.
 
-#### **Linux (Ubuntu)**
+### **Linux (Ubuntu)**
 
 1. Download the latest `.deb` package from the [official VSCode website](https://code.visualstudio.com/Download).
 2. Install the `.deb` package using **Terminal**:
@@ -138,7 +136,7 @@ Python 3.12.5 will be the default version used by the ACM Student Chapter for ev
      - "Rainbow CSV"
      - "Ruff"
 
-#### **macOS**
+### **macOS**
 
 1. Download the installer from the [official VSCode website](https://code.visualstudio.com/).
 2. Open the downloaded file and drag the VSCode icon into the **Applications** folder.
@@ -155,11 +153,11 @@ Python 3.12.5 will be the default version used by the ACM Student Chapter for ev
 
 ---
 
-### **Git and GitHub**
+## **Git and GitHub**
 
 ---
 
-#### **Step 1: Install Git**
+### **Step 1: Install Git**
 
 **Windows:**
 
@@ -193,13 +191,13 @@ Python 3.12.5 will be the default version used by the ACM Student Chapter for ev
    git --version
    ```
 
-#### **Step 2: Create a GitHub Account**
+### **Step 2: Create a GitHub Account**
 
 1. Go to [github.com](https://github.com).
 2. Click **"Sign Up"** and follow the instructions to create an account.
 3. Confirm your email address when prompted.
 
-#### **Step 3: Configure Git**
+### **Step 3: Configure Git**
 
 1. Open your terminal (or Command Prompt).
 2. Set your Git username and email address:
@@ -209,7 +207,7 @@ Python 3.12.5 will be the default version used by the ACM Student Chapter for ev
    ```
    **Note:** Use the email address associated with your GitHub account.
 
-#### **Step 4: Generate and Add SSH Keys**
+### **Step 4: Generate and Add SSH Keys**
 
 1. Generate a new SSH key:
    ```
@@ -232,7 +230,7 @@ Python 3.12.5 will be the default version used by the ACM Student Chapter for ev
    - Go to [GitHub SSH Settings](https://github.com/settings/keys).
    - Click **"New SSH Key"**, paste your key, and save.
 
-#### **Step 5: Test the SSH Connection**
+### **Step 5: Test the SSH Connection**
 
 Test your SSH connection to GitHub:
 ```  
@@ -242,17 +240,17 @@ If successful, you'll see a message confirming the connection.
 
 ---
 
-### **Discord**
+## **Discord**
 
 ---
 
-#### **Windows**
+### **Windows**
 
 1. Download Discord from the [official website](https://discord.com/download).
 2. Open the installer and follow the prompts to install Discord.
 3. Log in or create an account.
 
-#### **Linux (Ubuntu)**
+### **Linux (Ubuntu)**
 
 1. Download the `.deb` package from the [Discord website](https://discord.com/download).
 2. Install the `.deb` package:
@@ -262,24 +260,24 @@ If successful, you'll see a message confirming the connection.
    ```
 3. Open Discord from your applications menu.
 
-#### **macOS**
+### **macOS**
 
 1. Download Discord from the [official website](https://discord.com/download).
 2. Open the downloaded file and drag the Discord icon into the **Applications** folder.
 3. Log in or create an account.
 
 
-## All Programs
+# All Programs
 
-### asdf
+## asdf
 
 ---
 
-#### **Windows**
+### **Windows**
 
 1. asdf is not supported natively on Windows. Use WSL and follow the Linux instructions.
 
-#### **Linux (Ubuntu)**
+### **Linux (Ubuntu)**
 
 1. Install dependencies:
    ```
@@ -298,7 +296,7 @@ If successful, you'll see a message confirming the connection.
    asdf --version
    ```
 
-#### **macOS**
+### **macOS**
 
 1. Install Homebrew if not already installed.
 2. Install asdf:
@@ -316,15 +314,15 @@ If successful, you'll see a message confirming the connection.
 
 ---
 
-### devenv
+## devenv
 
 ---
 
-#### **Windows**
+### **Windows**
 
 1. Not natively supported. Use WSL and follow the Linux instructions.
 
-#### **Linux (Ubuntu)**
+### **Linux (Ubuntu)**
 
 1. Install the Nix package manager:
    ```
@@ -339,7 +337,7 @@ If successful, you'll see a message confirming the connection.
    devenv --version
    ```
 
-#### **macOS**
+### **macOS**
 
 1. Install the Nix package manager:
    ```
@@ -356,17 +354,17 @@ If successful, you'll see a message confirming the connection.
 
 ---
 
-### Discord
+## Discord
 
 ---
 
-#### **Windows**
+### **Windows**
 
 1. Download Discord from the [official website](https://discord.com/download).
 2. Open the installer and follow the prompts to install Discord.
 3. Log in or create an account.
 
-#### **Linux (Ubuntu)**
+### **Linux (Ubuntu)**
 
 1. Download the `.deb` package from the [Discord website](https://discord.com/download).
 2. Install the `.deb` package:
@@ -376,7 +374,7 @@ If successful, you'll see a message confirming the connection.
    ```
 3. Open Discord from your applications menu.
 
-#### **macOS**
+### **macOS**
 
 1. Download Discord from the [official website](https://discord.com/download).
 2. Open the downloaded file and drag the Discord icon into the **Applications** folder.
@@ -384,11 +382,11 @@ If successful, you'll see a message confirming the connection.
 
 ---
 
-### execexam
+## execexam
 
 ---
 
-#### **Windows, Linux (Ubuntu), macOS**
+### **Windows, Linux (Ubuntu), macOS**
 
 1. Ensure Python 3.7 or later is installed.
 2. Install execexam using pip:
@@ -402,11 +400,11 @@ If successful, you'll see a message confirming the connection.
 
 ---
 
-### Gatorgrade
+## Gatorgrade
 
 ---
 
-#### **Windows, Linux (Ubuntu), macOS**
+### **Windows, Linux (Ubuntu), macOS**
 
 1. Ensure Python 3.8 or later is installed.
 2. Install Gatorgrade globally using pip:
@@ -420,11 +418,11 @@ If successful, you'll see a message confirming the connection.
 
 ---
 
-### Git and SSH Key Setup
+## Git and SSH Key Setup
 
 ---
 
-#### **Step 1: Install Git**
+### **Step 1: Install Git**
 
 **Windows:**
 
@@ -458,13 +456,13 @@ If successful, you'll see a message confirming the connection.
    git --version
    ```
 
-#### **Step 2: Create a GitHub Account**
+### **Step 2: Create a GitHub Account**
 
 1. Go to [github.com](https://github.com).
 2. Click **"Sign Up"** and follow the instructions to create an account.
 3. Confirm your email address when prompted.
 
-#### **Step 3: Configure Git**
+### **Step 3: Configure Git**
 
 1. Open your terminal (or Command Prompt).
 2. Set your Git username and email address:
@@ -474,7 +472,7 @@ If successful, you'll see a message confirming the connection.
    ```
    **Note:** Use the email address associated with your GitHub account.
 
-#### **Step 4: Generate and Add SSH Keys**
+### **Step 4: Generate and Add SSH Keys**
 
 1. Generate a new SSH key:
    ```
@@ -497,7 +495,7 @@ If successful, you'll see a message confirming the connection.
    - Go to [GitHub SSH Settings](https://github.com/settings/keys).
    - Click **"New SSH Key"**, paste your key, and save.
 
-#### **Step 5: Test the SSH Connection**
+### **Step 5: Test the SSH Connection**
 
 Test your SSH connection to GitHub:
 ```  
@@ -507,11 +505,11 @@ If successful, you'll see a message confirming the connection.
 
 ---
 
-### Google Colab
+## Google Colab
 
 ---
 
-#### **All Platforms**
+### **All Platforms**
 
 1. Open your Google Drive and create a folder named `Colab Notebooks`.
 2. Open [Google Colab](https://colab.research.google.com/).
@@ -524,15 +522,15 @@ If successful, you'll see a message confirming the connection.
 
 ---
 
-### mise
+## mise
 
 ---
 
-#### **Windows**
+### **Windows**
 
 1. Not natively supported. Use WSL and follow the Linux instructions.
 
-#### **Linux (Ubuntu)**
+### **Linux (Ubuntu)**
 
 1. Install mise using the official script:
    ```
@@ -547,7 +545,7 @@ If successful, you'll see a message confirming the connection.
    mise --version
    ```
 
-#### **macOS**
+### **macOS**
 
 1. Install mise using the official script:
    ```
@@ -564,11 +562,11 @@ If successful, you'll see a message confirming the connection.
 
 ---
 
-### Poetry
+## Poetry
 
 ---
 
-#### **Windows**
+### **Windows**
 
 1. Open Command Prompt or PowerShell.
 2. Install Poetry using the official installer:
@@ -581,7 +579,7 @@ If successful, you'll see a message confirming the connection.
    poetry --version
    ```
 
-#### **Linux (Ubuntu)**
+### **Linux (Ubuntu)**
 
 1. Open a terminal.
 2. Install Poetry:
@@ -597,7 +595,7 @@ If successful, you'll see a message confirming the connection.
    poetry --version
    ```
 
-#### **macOS**
+### **macOS**
 
 1. Open Terminal.
 2. Install Poetry:
@@ -612,11 +610,11 @@ If successful, you'll see a message confirming the connection.
 
 ---
 
-### Python 3.12.5
+## Python 3.12.5
 
 ---
 
-#### **Windows**
+### **Windows**
 
 1. Download Python 3.12.5 from the [official Python website](https://www.python.org/downloads/release/python-3125/).
 2. Run the installer. During installation:
@@ -633,7 +631,7 @@ If successful, you'll see a message confirming the connection.
      ```
    - Ensure it outputs `Python 3.12.5`.
 
-#### **Linux (Ubuntu)**
+### **Linux (Ubuntu)**
 
 To install Python 3.12.5 from source:
 
@@ -669,7 +667,7 @@ To install Python 3.12.5 from source:
    ```
    Ensure it outputs `Python 3.12.5`.
 
-#### **macOS**
+### **macOS**
 
 1. Download Python 3.12.5 from the [official Python website](https://www.python.org/downloads/release/python-3125/).
 2. Open the downloaded `.pkg` file and follow the on-screen installation instructions.
@@ -686,11 +684,11 @@ Python 3.12.5 will be the default version used by the ACM Student Chapter for ev
 
 ---
 
-### Quarto
+## Quarto
 
 ---
 
-#### **Windows**
+### **Windows**
 
 1. Download Quarto from the [official website](https://quarto.org/docs/get-started/).
 2. Run the installer and follow the prompts.
@@ -699,7 +697,7 @@ Python 3.12.5 will be the default version used by the ACM Student Chapter for ev
    quarto check
    ```
 
-#### **Linux (Ubuntu)**
+### **Linux (Ubuntu)**
 
 1. Download the `.deb` file from the [Quarto website](https://quarto.org/docs/get-started/).
 2. Install it using:
@@ -711,7 +709,7 @@ Python 3.12.5 will be the default version used by the ACM Student Chapter for ev
    quarto check
    ```
 
-#### **macOS**
+### **macOS**
 
 1. Download the `.pkg` file from the [Quarto website](https://quarto.org/docs/get-started/).
 2. Open the file and follow the prompts to install.
@@ -722,17 +720,17 @@ Python 3.12.5 will be the default version used by the ACM Student Chapter for ev
 
 ---
 
-### Sublime Text
+## Sublime Text
 
 ---
 
-#### **Windows**
+### **Windows**
 
 1. Download Sublime Text from the [official website](https://www.sublimetext.com/download).
 2. Open the installer and follow the prompts to complete the installation.
 3. Launch Sublime Text from the Start menu.
 
-#### **Linux (Ubuntu)**
+### **Linux (Ubuntu)**
 
 1. Add the Sublime Text repository:
    ```
@@ -745,7 +743,7 @@ Python 3.12.5 will be the default version used by the ACM Student Chapter for ev
    sudo apt install sublime-text
    ```
 
-#### **macOS**
+### **macOS**
 
 1. Download Sublime Text from the [official website](https://www.sublimetext.com/download).
 2. Open the downloaded file and drag the Sublime Text icon into the **Applications** folder.
@@ -753,11 +751,11 @@ Python 3.12.5 will be the default version used by the ACM Student Chapter for ev
 
 ---
 
-### Visual Studio Code (VSCode)
+## Visual Studio Code (VSCode)
 
 ---
 
-#### **Windows**
+### **Windows**
 
 1. Download the installer from the [official VSCode website](https://code.visualstudio.com/).
 2. Run the installer and follow the prompts.
@@ -772,7 +770,7 @@ Python 3.12.5 will be the default version used by the ACM Student Chapter for ev
      - "Ruff"
    - Click **"Install"** for each.
 
-#### **Linux (Ubuntu)**
+### **Linux (Ubuntu)**
 
 1. Download the latest `.deb` package from the [official VSCode website](https://code.visualstudio.com/Download).
 2. Install the `.deb` package using **Terminal**:
@@ -790,7 +788,7 @@ Python 3.12.5 will be the default version used by the ACM Student Chapter for ev
      - "Rainbow CSV"
      - "Ruff"
 
-#### **macOS**
+### **macOS**
 
 1. Download the installer from the [official VSCode website](https://code.visualstudio.com/).
 2. Open the downloaded file and drag the VSCode icon into the **Applications** folder.
@@ -807,11 +805,11 @@ Python 3.12.5 will be the default version used by the ACM Student Chapter for ev
 
 ---
 
-### VPython Library
+## VPython Library
 
 ---
 
-#### **Windows, Linux (Ubuntu), macOS**
+### **Windows, Linux (Ubuntu), macOS**
 
 1. Ensure Python 3.7 or later is installed.
 2. Install VPython using pip:
@@ -827,7 +825,7 @@ Python 3.12.5 will be the default version used by the ACM Student Chapter for ev
 
 ---
 
-## Tips for Students
+# Tips for Students
 
 - Start your installations early to avoid last-minute issues.
 - Refer to ACM SOS Week sessions for setup help.
