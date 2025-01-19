@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -90,17 +90,8 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/"> <i class="bi bi-github" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com"> <i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://github.com/AlishChhetri/ac-acm-installation-guides"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -146,7 +137,41 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#allegheny-college-cis-course-tech-stack-guide" id="toc-allegheny-college-cis-course-tech-stack-guide" class="nav-link active" data-scroll-target="#allegheny-college-cis-course-tech-stack-guide"><strong>Allegheny College CIS Course Tech Stack Guide</strong></a>
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><strong>Introduction</strong></a></li>
+  <li><a href="#cmpsc-405-required-software" id="toc-cmpsc-405-required-software" class="nav-link" data-scroll-target="#cmpsc-405-required-software"><strong>CMPSC 405 Required Software</strong></a>
+  <ul class="collapse">
+  <li><a href="#git-github-and-ssh-key-setup" id="toc-git-github-and-ssh-key-setup" class="nav-link" data-scroll-target="#git-github-and-ssh-key-setup"><strong>Git, GitHub, and SSH Key Setup</strong></a>
+  <ul class="collapse">
+  <li><a href="#step-1-install-git" id="toc-step-1-install-git" class="nav-link" data-scroll-target="#step-1-install-git"><strong>Step 1: Install Git</strong></a></li>
+  <li><a href="#step-2-create-a-github-account" id="toc-step-2-create-a-github-account" class="nav-link" data-scroll-target="#step-2-create-a-github-account"><strong>Step 2: Create a GitHub Account</strong></a></li>
+  <li><a href="#step-3-configure-git" id="toc-step-3-configure-git" class="nav-link" data-scroll-target="#step-3-configure-git"><strong>Step 3: Configure Git</strong></a></li>
+  <li><a href="#step-4-generate-and-add-ssh-keys" id="toc-step-4-generate-and-add-ssh-keys" class="nav-link" data-scroll-target="#step-4-generate-and-add-ssh-keys"><strong>Step 4: Generate and Add SSH Keys</strong></a></li>
+  <li><a href="#step-5-test-the-ssh-connection" id="toc-step-5-test-the-ssh-connection" class="nav-link" data-scroll-target="#step-5-test-the-ssh-connection"><strong>Step 5: Test the SSH Connection</strong></a></li>
+  </ul></li>
+  <li><a href="#python" id="toc-python" class="nav-link" data-scroll-target="#python"><strong>Python</strong></a>
+  <ul class="collapse">
+  <li><a href="#windows" id="toc-windows" class="nav-link" data-scroll-target="#windows"><strong>Windows</strong></a></li>
+  <li><a href="#linux-ubuntu" id="toc-linux-ubuntu" class="nav-link" data-scroll-target="#linux-ubuntu"><strong>Linux (Ubuntu)</strong></a></li>
+  <li><a href="#macos" id="toc-macos" class="nav-link" data-scroll-target="#macos"><strong>macOS</strong></a></li>
+  </ul></li>
+  <li><a href="#visual-studio-code-vscode" id="toc-visual-studio-code-vscode" class="nav-link" data-scroll-target="#visual-studio-code-vscode"><strong>Visual Studio Code (VSCode)</strong></a>
+  <ul class="collapse">
+  <li><a href="#windows-1" id="toc-windows-1" class="nav-link" data-scroll-target="#windows-1"><strong>Windows</strong></a></li>
+  <li><a href="#linux-ubuntu-1" id="toc-linux-ubuntu-1" class="nav-link" data-scroll-target="#linux-ubuntu-1"><strong>Linux (Ubuntu)</strong></a></li>
+  <li><a href="#macos-1" id="toc-macos-1" class="nav-link" data-scroll-target="#macos-1"><strong>macOS</strong></a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -469,7 +494,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/effortless-choux-6c8dc2\.netlify\.app");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
