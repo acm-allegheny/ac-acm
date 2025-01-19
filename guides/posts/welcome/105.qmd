@@ -1,0 +1,221 @@
+---
+title: "CMPSC 105 - Data Exploration Setup Guide"
+author: "Allegheny College ACM Student Chapter"
+date: "2025-01-22"
+categories: [setup]
+---
+
+# **Allegheny College CIS Course Tech Stack Guide**
+*Spring Semester, 2024-2025 Academic Year*
+
+## **Introduction**
+
+Welcome to the *Allegheny College CIS Course Tech Stack Guide* for CMPSC 105 - Data Exploration. This document was created by the Allegheny College ACM Student Chapter as part of our "SOS (Set-up Our Students) Week" initiative. It is designed to help students enrolled in CMPSC 105 get set up with the necessary tools and software for their class.
+
+Our goal is to make the setup process simple and stress-free, so you can focus on learning and excelling in your coursework. Whether you’re a beginner or an experienced programmer, this guide is here to provide step-by-step instructions, useful tips, and links to resources for all the tools you’ll need.
+
+## **CMPSC 105 Required Software**
+
+### **Git, GitHub, and SSH Key Setup**
+
+---
+
+#### **Step 1: Install Git**
+
+**Windows:**
+
+1. Download Git from [git-scm.com](https://git-scm.com/downloads) and run the installer.
+2. During installation, select **"Use Git from the Windows Command Prompt"**.
+3. Verify the installation:
+   - Open **Command Prompt** and type:
+     ```
+     git --version
+     ```
+
+**Linux (Ubuntu):**
+
+1. Install Git using **Terminal**:
+   ```
+   sudo apt update && sudo apt install git
+   ```
+2. Verify the installation:
+   ```
+   git --version
+   ```
+
+**macOS:**
+
+1. Install Git using Homebrew:
+   ```
+   brew install git
+   ```
+2. Verify the installation:
+   ```
+   git --version
+   ```
+
+#### **Step 2: Create a GitHub Account**
+
+1. Go to [github.com](https://github.com).
+2. Click **"Sign Up"** and follow the instructions to create an account.
+3. Confirm your email address when prompted.
+
+#### **Step 3: Configure Git**
+
+1. Open your terminal (or Command Prompt).
+2. Set your Git username and email address:
+   ```
+   git config --global user.name "Your Name"
+   git config --global user.email "your.email@example.com"
+   ```
+   **Note:** Use the email address associated with your GitHub account.
+
+#### **Step 4: Generate and Add SSH Keys**
+
+1. Generate a new SSH key:
+   ```
+   ssh-keygen -t ed25519 -C "your.email@example.com"
+   ```
+   When prompted, press **Enter** to save the key in the default location, and optionally add a passphrase.
+2. Start the SSH agent:
+   ```
+   eval "$(ssh-agent -s)"
+   ```
+3. Add your SSH key to the agent:
+   ```
+   ssh-add ~/.ssh/id_ed25519
+   ```
+4. Copy your public key to your clipboard:
+   ```
+   cat ~/.ssh/id_ed25519.pub
+   ```
+5. Add the key to your GitHub account:
+   - Go to [GitHub SSH Settings](https://github.com/settings/keys).
+   - Click **"New SSH Key"**, paste your key, and save.
+
+#### **Step 5: Test the SSH Connection**
+
+Test your SSH connection to GitHub:
+```  
+ssh -T git@github.com
+```
+If successful, you'll see a message confirming the connection.
+
+#### **Uploading/Downloading Files from GitHub Without Git**
+
+If you prefer not to use Git on your local machine, you can still upload and download files manually from GitHub.
+
+##### **Uploading Files to GitHub Without Git**
+
+1. Go to your repository on [GitHub](https://github.com).
+2. Click the **"Add file"** button and select **"Upload files"**.
+3. Drag and drop files or click **"choose your files"** to select them.
+4. Add a commit message and click **"Commit changes"** to upload the files.
+
+##### **Downloading Files from GitHub Without Git**
+
+1. Navigate to the repository on [GitHub](https://github.com).
+2. Click the **"Code"** button and select **"Download ZIP"**.
+3. Extract the downloaded ZIP file to access the project files.
+
+
+---
+
+### **Visual Studio Code (VSCode)**
+
+---
+
+#### **Windows**
+
+1. Download the installer from the [official VSCode website](https://code.visualstudio.com/).
+2. Run the installer and follow the prompts.
+3. Install recommended extensions:
+   - Open VSCode, go to the **Extensions** view (`Ctrl+Shift+X`), and search for the following:
+     - "Intellicode"
+     - "Intellicode API Usage Examples"
+     - "Python"
+     - "Jupyter"
+     - "Markdown All in One"
+     - "Rainbow CSV"
+     - "Ruff"
+   - Click **"Install"** for each.
+
+#### **Linux (Ubuntu)**
+
+1. Download the latest `.deb` package from the [official VSCode website](https://code.visualstudio.com/Download).
+2. Install the `.deb` package using **Terminal**:
+   ```
+   sudo dpkg -i code_*.deb
+   sudo apt-get install -f
+   ```
+3. Open VSCode and install recommended extensions:
+   - Go to the **Extensions** view (`Ctrl+Shift+X`), search for the following, and click **"Install"**:
+     - "Intellicode"
+     - "Intellicode API Usage Examples"
+     - "Python"
+     - "Jupyter"
+     - "Markdown All in One"
+     - "Rainbow CSV"
+     - "Ruff"
+
+#### **macOS**
+
+1. Download the installer from the [official VSCode website](https://code.visualstudio.com/).
+2. Open the downloaded file and drag the VSCode icon into the **Applications** folder.
+3. Install recommended extensions:
+   - Open VSCode, go to the **Extensions** view (`Cmd+Shift+X`), and search for the following:
+     - "Intellicode"
+     - "Intellicode API Usage Examples"
+     - "Python"
+     - "Jupyter"
+     - "Markdown All in One"
+     - "Rainbow CSV"
+     - "Ruff"
+   - Click **"Install"** for each.
+
+---
+
+### **Google Colab**
+
+---
+
+#### **All Platforms**
+
+1. Open your Google Drive and create a folder named `Colab Notebooks`.
+2. Open [Google Colab](https://colab.research.google.com/).
+3. Save your notebook to Google Drive by clicking **File > Save a copy in Drive**.
+4. To find the Colab directory in Google Drive:
+   - Open Google Drive and look for the `Colab Notebooks` folder. Any notebooks saved in Colab will automatically appear here.
+5. Uploading/downloading notebooks to/from GitHub without Git:
+   - **Uploading:** Download the `.ipynb` file from GitHub and upload it directly to Google Colab.
+   - **Downloading:** Use **File > Download > Download .ipynb** in Colab to save your notebook and then manually upload it to GitHub.
+
+---
+
+### **Discord**
+
+---
+
+#### **Windows**
+
+1. Download Discord from the [official website](https://discord.com/download).
+2. Open the installer and follow the prompts to install Discord.
+3. Log in or create an account.
+
+#### **Linux (Ubuntu)**
+
+1. Download the `.deb` package from the [Discord website](https://discord.com/download).
+2. Install the `.deb` package:
+   ```
+   sudo dpkg -i discord-*.deb
+   sudo apt-get install -f
+   ```
+3. Open Discord from your applications menu.
+
+#### **macOS**
+
+1. Download Discord from the [official website](https://discord.com/download).
+2. Open the downloaded file and drag the Discord icon into the **Applications** folder.
+3. Log in or create an account.
+
+By completing these setup steps, you'll be well-prepared for your CMPSC 105 coursework. If you encounter any issues, feel free to reach out through the course's Discord channel or attend the ACM SOS Week sessions for assistance.

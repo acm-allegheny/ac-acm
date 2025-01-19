@@ -7,13 +7,12 @@ website:
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
+        href: https://github.com/AlishChhetri/ac-acm-installation-guides
+
 format:
   html:
     theme: cosmo
     css: styles.css
-
-
-
+    toc: true
+    toc-location: right
+    toc-depth: 4

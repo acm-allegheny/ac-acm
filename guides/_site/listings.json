@@ -2,7 +2,13 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/welcome/index.html"
+      "/posts/welcome/100.html",
+      "/posts/welcome/405.html",
+      "/posts/welcome/102.html",
+      "/posts/welcome/302.html",
+      "/posts/welcome/202.html",
+      "/posts/welcome/101.html",
+      "/posts/welcome/105.html"
     ]
   }
 ]

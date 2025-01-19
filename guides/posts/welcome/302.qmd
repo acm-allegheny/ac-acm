@@ -1,12 +1,8 @@
 ---
-title: "About"
-about:
-  template: trestles
-  links:
-    - icon: github
-      text: Github
-      href: https://github.com/AlishChhetri/ac-acm-installation-guides
-
+title: "CMPSC 302 - Web Design Setup Guide"
+author: "Allegheny College ACM Student Chapter"
+date: "2025-01-22"
+categories: [setup]
 ---
 
 # **Allegheny College CIS Course Tech Stack Guide**
@@ -14,16 +10,98 @@ about:
 
 ## **Introduction**
 
-Welcome to the *Allegheny College CIS Course Tech Stack Guide* for the Spring semester of the 2024-2025 academic year! This document was created by the Allegheny College ACM Student Chapter as part of our "SOS (Set-up Our Students) Week" initiative. It is designed to help students enrolled in Computer and Information Science (CIS) courses get set up with the necessary tools and software for their classes.
+Welcome to the *Allegheny College CIS Course Tech Stack Guide* for CMPSC 302 - Web Design. This document was created by the Allegheny College ACM Student Chapter as part of our "SOS (Set-up Our Students) Week" initiative. It is designed to help students enrolled in CMPSC 302 get set up with the necessary tools and software for their class.
 
 Our goal is to make the setup process simple and stress-free, so you can focus on learning and excelling in your coursework. Whether you’re a beginner or an experienced programmer, this guide is here to provide step-by-step instructions, useful tips, and links to resources for all the tools you’ll need.
 
+## **CMPSC 302 Required Software**
 
-### **General Setup Resources**
-Below are detailed installation steps for commonly required tools, broken down by operating system. These tools will be used for ACM events and workshops and are also general tools widely used across the Computer and Information Science department. Following these setup instructions will ensure you are prepared for your coursework and extracurricular programming activities.
+### **Git, GitHub, and SSH Key Setup**
 
+---
 
-## ACM Required Software
+#### **Step 1: Install Git**
+
+**Windows:**
+
+1. Download Git from [git-scm.com](https://git-scm.com/downloads) and run the installer.
+2. During installation, select **"Use Git from the Windows Command Prompt"**.
+3. Verify the installation:
+   - Open **Command Prompt** and type:
+     ```
+     git --version
+     ```
+
+**Linux (Ubuntu):**
+
+1. Install Git using **Terminal**:
+   ```
+   sudo apt update && sudo apt install git
+   ```
+2. Verify the installation:
+   ```
+   git --version
+   ```
+
+**macOS:**
+
+1. Install Git using Homebrew:
+   ```
+   brew install git
+   ```
+2. Verify the installation:
+   ```
+   git --version
+   ```
+
+#### **Step 2: Create a GitHub Account**
+
+1. Go to [github.com](https://github.com).
+2. Click **"Sign Up"** and follow the instructions to create an account.
+3. Confirm your email address when prompted.
+
+#### **Step 3: Configure Git**
+
+1. Open your terminal (or Command Prompt).
+2. Set your Git username and email address:
+   ```
+   git config --global user.name "Your Name"
+   git config --global user.email "your.email@example.com"
+   ```
+   **Note:** Use the email address associated with your GitHub account.
+
+#### **Step 4: Generate and Add SSH Keys**
+
+1. Generate a new SSH key:
+   ```
+   ssh-keygen -t ed25519 -C "your.email@example.com"
+   ```
+   When prompted, press **Enter** to save the key in the default location, and optionally add a passphrase.
+2. Start the SSH agent:
+   ```
+   eval "$(ssh-agent -s)"
+   ```
+3. Add your SSH key to the agent:
+   ```
+   ssh-add ~/.ssh/id_ed25519
+   ```
+4. Copy your public key to your clipboard:
+   ```
+   cat ~/.ssh/id_ed25519.pub
+   ```
+5. Add the key to your GitHub account:
+   - Go to [GitHub SSH Settings](https://github.com/settings/keys).
+   - Click **"New SSH Key"**, paste your key, and save.
+
+#### **Step 5: Test the SSH Connection**
+
+Test your SSH connection to GitHub:
+```  
+ssh -T git@github.com
+```
+If successful, you'll see a message confirming the connection.
+
+---
 
 ### **Python**
 
@@ -153,116 +231,4 @@ Python 3.12.5 will be the default version used by the ACM Student Chapter for ev
 
 ---
 
-### **Git and GitHub**
-
----
-
-#### **Step 1: Install Git**
-
-**Windows:**
-
-1. Download Git from [git-scm.com](https://git-scm.com/downloads) and run the installer.
-2. During installation, select **"Use Git from the Windows Command Prompt"**.
-3. Verify the installation:
-   - Open **Command Prompt** and type:
-     ```
-     git --version
-     ```
-
-**Linux (Ubuntu):**
-
-1. Install Git using **Terminal**:
-   ```
-   sudo apt update && sudo apt install git
-   ```
-2. Verify the installation:
-   ```
-   git --version
-   ```
-
-**macOS:**
-
-1. Install Git using Homebrew:
-   ```
-   brew install git
-   ```
-2. Verify the installation:
-   ```
-   git --version
-   ```
-
-#### **Step 2: Create a GitHub Account**
-
-1. Go to [github.com](https://github.com).
-2. Click **"Sign Up"** and follow the instructions to create an account.
-3. Confirm your email address when prompted.
-
-#### **Step 3: Configure Git**
-
-1. Open your terminal (or Command Prompt).
-2. Set your Git username and email address:
-   ```
-   git config --global user.name "Your Name"
-   git config --global user.email "your.email@example.com"
-   ```
-   **Note:** Use the email address associated with your GitHub account.
-
-#### **Step 4: Generate and Add SSH Keys**
-
-1. Generate a new SSH key:
-   ```
-   ssh-keygen -t ed25519 -C "your.email@example.com"
-   ```
-   When prompted, press **Enter** to save the key in the default location, and optionally add a passphrase.
-2. Start the SSH agent:
-   ```
-   eval "$(ssh-agent -s)"
-   ```
-3. Add your SSH key to the agent:
-   ```
-   ssh-add ~/.ssh/id_ed25519
-   ```
-4. Copy your public key to your clipboard:
-   ```
-   cat ~/.ssh/id_ed25519.pub
-   ```
-5. Add the key to your GitHub account:
-   - Go to [GitHub SSH Settings](https://github.com/settings/keys).
-   - Click **"New SSH Key"**, paste your key, and save.
-
-#### **Step 5: Test the SSH Connection**
-
-Test your SSH connection to GitHub:
-```  
-ssh -T git@github.com
-```
-If successful, you'll see a message confirming the connection.
-
----
-
-### **Discord**
-
----
-
-#### **Windows**
-
-1. Download Discord from the [official website](https://discord.com/download).
-2. Open the installer and follow the prompts to install Discord.
-3. Log in or create an account.
-
-#### **Linux (Ubuntu)**
-
-1. Download the `.deb` package from the [Discord website](https://discord.com/download).
-2. Install the `.deb` package:
-   ```
-   sudo dpkg -i discord-*.deb
-   sudo apt-get install -f
-   ```
-3. Open Discord from your applications menu.
-
-#### **macOS**
-
-1. Download Discord from the [official website](https://discord.com/download).
-2. Open the downloaded file and drag the Discord icon into the **Applications** folder.
-3. Log in or create an account.
-
+By completing these setup steps, you'll be well-prepared for your CMPSC 302 coursework. If you encounter any issues, feel free to reach out through the course's Discord channel or attend the ACM SOS Week sessions for assistance.

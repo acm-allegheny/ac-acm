@@ -1,0 +1,310 @@
+---
+title: "CMPSC 101 - Data Structures Setup Guide"
+author: "Allegheny College ACM Student Chapter"
+date: "2025-01-22"
+categories: [setup]
+---
+
+# **Allegheny College CIS Course Tech Stack Guide**
+*Spring Semester, 2024-2025 Academic Year*
+
+## **Introduction**
+
+Welcome to the *Allegheny College CIS Course Tech Stack Guide* for CMPSC 101 - Data Structures. This document was created by the Allegheny College ACM Student Chapter as part of our "SOS (Set-up Our Students) Week" initiative. It is designed to help students enrolled in CMPSC 101 get set up with the necessary tools and software for their class.
+
+Our goal is to make the setup process simple and stress-free, so you can focus on learning and excelling in your coursework. Whether you’re a beginner or an experienced programmer, this guide is here to provide step-by-step instructions, useful tips, and links to resources for all the tools you’ll need.
+
+## **CMPSC 101 Required Software**
+
+### **Git, GitHub, and SSH Key Setup**
+
+---
+
+#### **Step 1: Install Git**
+
+**Windows:**
+
+1. Download Git from [git-scm.com](https://git-scm.com/downloads) and run the installer.
+2. During installation, select **"Use Git from the Windows Command Prompt"**.
+3. Verify the installation:
+   - Open **Command Prompt** and type:
+     ```
+     git --version
+     ```
+
+**Linux (Ubuntu):**
+
+1. Install Git using **Terminal**:
+   ```
+   sudo apt update && sudo apt install git
+   ```
+2. Verify the installation:
+   ```
+   git --version
+   ```
+
+**macOS:**
+
+1. Install Git using Homebrew:
+   ```
+   brew install git
+   ```
+2. Verify the installation:
+   ```
+   git --version
+   ```
+
+#### **Step 2: Create a GitHub Account**
+
+1. Go to [github.com](https://github.com).
+2. Click **"Sign Up"** and follow the instructions to create an account.
+3. Confirm your email address when prompted.
+
+#### **Step 3: Configure Git**
+
+1. Open your terminal (or Command Prompt).
+2. Set your Git username and email address:
+   ```
+   git config --global user.name "Your Name"
+   git config --global user.email "your.email@example.com"
+   ```
+   **Note:** Use the email address associated with your GitHub account.
+
+#### **Step 4: Generate and Add SSH Keys**
+
+1. Generate a new SSH key:
+   ```
+   ssh-keygen -t ed25519 -C "your.email@example.com"
+   ```
+   When prompted, press **Enter** to save the key in the default location, and optionally add a passphrase.
+2. Start the SSH agent:
+   ```
+   eval "$(ssh-agent -s)"
+   ```
+3. Add your SSH key to the agent:
+   ```
+   ssh-add ~/.ssh/id_ed25519
+   ```
+4. Copy your public key to your clipboard:
+   ```
+   cat ~/.ssh/id_ed25519.pub
+   ```
+5. Add the key to your GitHub account:
+   - Go to [GitHub SSH Settings](https://github.com/settings/keys).
+   - Click **"New SSH Key"**, paste your key, and save.
+
+#### **Step 5: Test the SSH Connection**
+
+Test your SSH connection to GitHub:
+```  
+ssh -T git@github.com
+```
+If successful, you'll see a message confirming the connection.
+
+---
+
+### **Python 3.8 or Later**
+
+---
+
+#### **Windows**
+
+1. Download Python 3.12.5 from the [official Python website](https://www.python.org/downloads/release/python-3125/).
+2. Run the installer. During installation:
+   - Check the box that says **"Add Python to PATH"** before clicking **"Install Now"**.
+   - Ensure **"Install launcher for all users"** is selected.
+3. Verify the installation:
+   - Open **Command Prompt** and type:
+     ```
+     python --version
+     ```
+     or
+     ```
+     python3 --version
+     ```
+   - Ensure it outputs `Python 3.12.5`.
+
+#### **Linux (Ubuntu)**
+
+To install Python 3.12.5 from source:
+
+1. Update your system packages by running:
+   ```
+   sudo apt update && sudo apt upgrade
+   ```
+2. Install the necessary dependencies with:
+   ```
+   sudo apt install -y build-essential libssl-dev zlib1g-dev \
+   libncurses5-dev libnss3-dev libsqlite3-dev libreadline-dev \
+   libffi-dev curl libbz2-dev
+   ```
+3. Download the source code for Python 3.12.5 from the official website:
+   ```
+   curl -O https://www.python.org/ftp/python/3.12.5/Python-3.12.5.tgz
+   ```
+4. Extract the downloaded tarball and navigate into the directory:
+   ```
+   tar -xf Python-3.12.5.tgz
+   cd Python-3.12.5
+   ```
+5. Build and install Python:
+   ```
+   ./configure --enable-optimizations
+   make -j$(nproc)
+   sudo make altinstall
+   ```
+   **Note:** Use `altinstall` to avoid overwriting the system's default Python.
+6. Verify the installation by typing:
+   ```
+   python3.12 --version
+   ```
+   Ensure it outputs `Python 3.12.5`.
+
+#### **macOS**
+
+1. Download Python 3.12.5 from the [official Python website](https://www.python.org/downloads/release/python-3125/).
+2. Open the downloaded `.pkg` file and follow the on-screen installation instructions.
+3. Verify the installation:
+   - Open **Terminal** and type:
+     ```
+     python3 --version
+     ```
+   - Ensure it outputs `Python 3.12.5`.
+
+**Important Note:**
+
+Python 3.12.5 will be the default version used by the ACM Student Chapter for events and workshops. However, please check your course syllabus to ensure you are using the version specified by your instructor, if different.
+
+
+### **Poetry**
+
+---
+
+#### **Windows**
+
+1. Open Command Prompt or PowerShell.
+2. Install Poetry using the official installer:
+   ```
+   curl -sSL https://install.python-poetry.org | python3 -
+   ```
+3. Add Poetry to your PATH by editing your environment variables or following the on-screen instructions after installation.
+4. Verify the installation:
+   ```
+   poetry --version
+   ```
+
+#### **Linux (Ubuntu)**
+
+1. Open a terminal.
+2. Install Poetry:
+   ```
+   curl -sSL https://install.python-poetry.org | python3 -
+   ```
+3. Add Poetry to your PATH:
+   ```
+   export PATH="$HOME/.local/bin:$PATH"
+   ```
+4. Verify the installation:
+   ```
+   poetry --version
+   ```
+
+#### **macOS**
+
+1. Open Terminal.
+2. Install Poetry:
+   ```
+   curl -sSL https://install.python-poetry.org | python3 -
+   ```
+3. Add Poetry to your PATH if necessary.
+4. Verify the installation:
+   ```
+   poetry --version
+   ```
+
+---
+
+### **Gatorgrade**
+
+---
+
+#### **Windows, Linux (Ubuntu), macOS**
+
+1. Ensure Python 3.8 or later is installed.
+2. Install Gatorgrade globally using pip:
+   ```
+   pip install gatorgrade
+   ```
+3. Verify the installation:
+   ```
+   gatorgrade --help
+   ```
+
+---
+
+### **Sublime Text**
+
+---
+
+#### **Windows**
+
+1. Download Sublime Text from the [official website](https://www.sublimetext.com/download).
+2. Open the installer and follow the prompts to complete the installation.
+3. Launch Sublime Text from the Start menu.
+
+#### **Linux (Ubuntu)**
+
+1. Add the Sublime Text repository:
+   ```
+   wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+   echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+   ```
+2. Update and install Sublime Text:
+   ```
+   sudo apt update
+   sudo apt install sublime-text
+   ```
+
+#### **macOS**
+
+1. Download Sublime Text from the [official website](https://www.sublimetext.com/download).
+2. Open the downloaded file and drag the Sublime Text icon into the **Applications** folder.
+3. Launch Sublime Text from Spotlight or the Applications folder.
+
+---
+
+### **Discord**
+
+---
+
+#### **Windows**
+
+1. Download Discord from the [official website](https://discord.com/download).
+2. Open the installer and follow the prompts to install Discord.
+3. Log in or create an account.
+
+#### **Linux (Ubuntu)**
+
+1. Download the `.deb` package from the [Discord website](https://discord.com/download).
+2. Install the `.deb` package:
+   ```
+   sudo dpkg -i discord-*.deb
+   sudo apt-get install -f
+   ```
+3. Open Discord from your applications menu.
+
+#### **macOS**
+
+1. Download Discord from the [official website](https://discord.com/download).
+2. Open the downloaded file and drag the Discord icon into the **Applications** folder.
+3. Log in or create an account.
+
+---
+
+## **Additional Resources**
+
+For more details, refer to the official [course software installation guide](https://allegheny-college-cmpsc-101-spring-2025.github.io/site/slides/01-software-installation.pdf).
+
+---
+
+By completing these setup steps, you'll be well-prepared for your CMPSC 101 coursework. If you encounter any issues, feel free to reach out through the course's Discord channel or attend the ACM SOS Week sessions for assistance.

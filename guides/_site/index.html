@@ -187,12 +187,7 @@ window.Quarto = {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/"> <i class="bi bi-github" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com"> <i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://github.com/AlishChhetri/ac-acm-installation-guides"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -224,8 +219,131 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c2V0dXA=">setup <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#allegheny-college-cis-course-tech-stack-guide" id="toc-allegheny-college-cis-course-tech-stack-guide" class="nav-link active" data-scroll-target="#allegheny-college-cis-course-tech-stack-guide"><strong>Allegheny College CIS Course Tech Stack Guide</strong></a>
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><strong>Introduction</strong></a>
+  <ul class="collapse">
+  <li><a href="#general-setup-resources" id="toc-general-setup-resources" class="nav-link" data-scroll-target="#general-setup-resources"><strong>General Setup Resources</strong></a></li>
+  </ul></li>
+  <li><a href="#acm-required-software" id="toc-acm-required-software" class="nav-link" data-scroll-target="#acm-required-software">ACM Required Software</a>
+  <ul class="collapse">
+  <li><a href="#python" id="toc-python" class="nav-link" data-scroll-target="#python"><strong>Python</strong></a>
+  <ul class="collapse">
+  <li><a href="#windows" id="toc-windows" class="nav-link" data-scroll-target="#windows"><strong>Windows</strong></a></li>
+  <li><a href="#linux-ubuntu" id="toc-linux-ubuntu" class="nav-link" data-scroll-target="#linux-ubuntu"><strong>Linux (Ubuntu)</strong></a></li>
+  <li><a href="#macos" id="toc-macos" class="nav-link" data-scroll-target="#macos"><strong>macOS</strong></a></li>
+  </ul></li>
+  <li><a href="#visual-studio-code-vscode" id="toc-visual-studio-code-vscode" class="nav-link" data-scroll-target="#visual-studio-code-vscode"><strong>Visual Studio Code (VSCode)</strong></a>
+  <ul class="collapse">
+  <li><a href="#windows-1" id="toc-windows-1" class="nav-link" data-scroll-target="#windows-1"><strong>Windows</strong></a></li>
+  <li><a href="#linux-ubuntu-1" id="toc-linux-ubuntu-1" class="nav-link" data-scroll-target="#linux-ubuntu-1"><strong>Linux (Ubuntu)</strong></a></li>
+  <li><a href="#macos-1" id="toc-macos-1" class="nav-link" data-scroll-target="#macos-1"><strong>macOS</strong></a></li>
+  </ul></li>
+  <li><a href="#git-and-github" id="toc-git-and-github" class="nav-link" data-scroll-target="#git-and-github"><strong>Git and GitHub</strong></a>
+  <ul class="collapse">
+  <li><a href="#step-1-install-git" id="toc-step-1-install-git" class="nav-link" data-scroll-target="#step-1-install-git"><strong>Step 1: Install Git</strong></a></li>
+  <li><a href="#step-2-create-a-github-account" id="toc-step-2-create-a-github-account" class="nav-link" data-scroll-target="#step-2-create-a-github-account"><strong>Step 2: Create a GitHub Account</strong></a></li>
+  <li><a href="#step-3-configure-git" id="toc-step-3-configure-git" class="nav-link" data-scroll-target="#step-3-configure-git"><strong>Step 3: Configure Git</strong></a></li>
+  <li><a href="#step-4-generate-and-add-ssh-keys" id="toc-step-4-generate-and-add-ssh-keys" class="nav-link" data-scroll-target="#step-4-generate-and-add-ssh-keys"><strong>Step 4: Generate and Add SSH Keys</strong></a></li>
+  <li><a href="#step-5-test-the-ssh-connection" id="toc-step-5-test-the-ssh-connection" class="nav-link" data-scroll-target="#step-5-test-the-ssh-connection"><strong>Step 5: Test the SSH Connection</strong></a></li>
+  </ul></li>
+  <li><a href="#discord" id="toc-discord" class="nav-link" data-scroll-target="#discord"><strong>Discord</strong></a>
+  <ul class="collapse">
+  <li><a href="#windows-2" id="toc-windows-2" class="nav-link" data-scroll-target="#windows-2"><strong>Windows</strong></a></li>
+  <li><a href="#linux-ubuntu-2" id="toc-linux-ubuntu-2" class="nav-link" data-scroll-target="#linux-ubuntu-2"><strong>Linux (Ubuntu)</strong></a></li>
+  <li><a href="#macos-2" id="toc-macos-2" class="nav-link" data-scroll-target="#macos-2"><strong>macOS</strong></a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#all-programs" id="toc-all-programs" class="nav-link" data-scroll-target="#all-programs">All Programs</a>
+  <ul class="collapse">
+  <li><a href="#asdf" id="toc-asdf" class="nav-link" data-scroll-target="#asdf">asdf</a>
+  <ul class="collapse">
+  <li><a href="#windows-3" id="toc-windows-3" class="nav-link" data-scroll-target="#windows-3"><strong>Windows</strong></a></li>
+  <li><a href="#linux-ubuntu-3" id="toc-linux-ubuntu-3" class="nav-link" data-scroll-target="#linux-ubuntu-3"><strong>Linux (Ubuntu)</strong></a></li>
+  <li><a href="#macos-3" id="toc-macos-3" class="nav-link" data-scroll-target="#macos-3"><strong>macOS</strong></a></li>
+  </ul></li>
+  <li><a href="#devenv" id="toc-devenv" class="nav-link" data-scroll-target="#devenv">devenv</a>
+  <ul class="collapse">
+  <li><a href="#windows-4" id="toc-windows-4" class="nav-link" data-scroll-target="#windows-4"><strong>Windows</strong></a></li>
+  <li><a href="#linux-ubuntu-4" id="toc-linux-ubuntu-4" class="nav-link" data-scroll-target="#linux-ubuntu-4"><strong>Linux (Ubuntu)</strong></a></li>
+  <li><a href="#macos-4" id="toc-macos-4" class="nav-link" data-scroll-target="#macos-4"><strong>macOS</strong></a></li>
+  </ul></li>
+  <li><a href="#discord-1" id="toc-discord-1" class="nav-link" data-scroll-target="#discord-1">Discord</a>
+  <ul class="collapse">
+  <li><a href="#windows-5" id="toc-windows-5" class="nav-link" data-scroll-target="#windows-5"><strong>Windows</strong></a></li>
+  <li><a href="#linux-ubuntu-5" id="toc-linux-ubuntu-5" class="nav-link" data-scroll-target="#linux-ubuntu-5"><strong>Linux (Ubuntu)</strong></a></li>
+  <li><a href="#macos-5" id="toc-macos-5" class="nav-link" data-scroll-target="#macos-5"><strong>macOS</strong></a></li>
+  </ul></li>
+  <li><a href="#execexam" id="toc-execexam" class="nav-link" data-scroll-target="#execexam">execexam</a>
+  <ul class="collapse">
+  <li><a href="#windows-linux-ubuntu-macos" id="toc-windows-linux-ubuntu-macos" class="nav-link" data-scroll-target="#windows-linux-ubuntu-macos"><strong>Windows, Linux (Ubuntu), macOS</strong></a></li>
+  </ul></li>
+  <li><a href="#gatorgrade" id="toc-gatorgrade" class="nav-link" data-scroll-target="#gatorgrade">Gatorgrade</a>
+  <ul class="collapse">
+  <li><a href="#windows-linux-ubuntu-macos-1" id="toc-windows-linux-ubuntu-macos-1" class="nav-link" data-scroll-target="#windows-linux-ubuntu-macos-1"><strong>Windows, Linux (Ubuntu), macOS</strong></a></li>
+  </ul></li>
+  <li><a href="#git-and-ssh-key-setup" id="toc-git-and-ssh-key-setup" class="nav-link" data-scroll-target="#git-and-ssh-key-setup">Git and SSH Key Setup</a>
+  <ul class="collapse">
+  <li><a href="#step-1-install-git-1" id="toc-step-1-install-git-1" class="nav-link" data-scroll-target="#step-1-install-git-1"><strong>Step 1: Install Git</strong></a></li>
+  <li><a href="#step-2-create-a-github-account-1" id="toc-step-2-create-a-github-account-1" class="nav-link" data-scroll-target="#step-2-create-a-github-account-1"><strong>Step 2: Create a GitHub Account</strong></a></li>
+  <li><a href="#step-3-configure-git-1" id="toc-step-3-configure-git-1" class="nav-link" data-scroll-target="#step-3-configure-git-1"><strong>Step 3: Configure Git</strong></a></li>
+  <li><a href="#step-4-generate-and-add-ssh-keys-1" id="toc-step-4-generate-and-add-ssh-keys-1" class="nav-link" data-scroll-target="#step-4-generate-and-add-ssh-keys-1"><strong>Step 4: Generate and Add SSH Keys</strong></a></li>
+  <li><a href="#step-5-test-the-ssh-connection-1" id="toc-step-5-test-the-ssh-connection-1" class="nav-link" data-scroll-target="#step-5-test-the-ssh-connection-1"><strong>Step 5: Test the SSH Connection</strong></a></li>
+  </ul></li>
+  <li><a href="#google-colab" id="toc-google-colab" class="nav-link" data-scroll-target="#google-colab">Google Colab</a>
+  <ul class="collapse">
+  <li><a href="#all-platforms" id="toc-all-platforms" class="nav-link" data-scroll-target="#all-platforms"><strong>All Platforms</strong></a></li>
+  </ul></li>
+  <li><a href="#mise" id="toc-mise" class="nav-link" data-scroll-target="#mise">mise</a>
+  <ul class="collapse">
+  <li><a href="#windows-6" id="toc-windows-6" class="nav-link" data-scroll-target="#windows-6"><strong>Windows</strong></a></li>
+  <li><a href="#linux-ubuntu-6" id="toc-linux-ubuntu-6" class="nav-link" data-scroll-target="#linux-ubuntu-6"><strong>Linux (Ubuntu)</strong></a></li>
+  <li><a href="#macos-6" id="toc-macos-6" class="nav-link" data-scroll-target="#macos-6"><strong>macOS</strong></a></li>
+  </ul></li>
+  <li><a href="#poetry" id="toc-poetry" class="nav-link" data-scroll-target="#poetry">Poetry</a>
+  <ul class="collapse">
+  <li><a href="#windows-7" id="toc-windows-7" class="nav-link" data-scroll-target="#windows-7"><strong>Windows</strong></a></li>
+  <li><a href="#linux-ubuntu-7" id="toc-linux-ubuntu-7" class="nav-link" data-scroll-target="#linux-ubuntu-7"><strong>Linux (Ubuntu)</strong></a></li>
+  <li><a href="#macos-7" id="toc-macos-7" class="nav-link" data-scroll-target="#macos-7"><strong>macOS</strong></a></li>
+  </ul></li>
+  <li><a href="#python-3.12.5" id="toc-python-3.12.5" class="nav-link" data-scroll-target="#python-3.12.5">Python 3.12.5</a>
+  <ul class="collapse">
+  <li><a href="#windows-8" id="toc-windows-8" class="nav-link" data-scroll-target="#windows-8"><strong>Windows</strong></a></li>
+  <li><a href="#linux-ubuntu-8" id="toc-linux-ubuntu-8" class="nav-link" data-scroll-target="#linux-ubuntu-8"><strong>Linux (Ubuntu)</strong></a></li>
+  <li><a href="#macos-8" id="toc-macos-8" class="nav-link" data-scroll-target="#macos-8"><strong>macOS</strong></a></li>
+  </ul></li>
+  <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto">Quarto</a>
+  <ul class="collapse">
+  <li><a href="#windows-9" id="toc-windows-9" class="nav-link" data-scroll-target="#windows-9"><strong>Windows</strong></a></li>
+  <li><a href="#linux-ubuntu-9" id="toc-linux-ubuntu-9" class="nav-link" data-scroll-target="#linux-ubuntu-9"><strong>Linux (Ubuntu)</strong></a></li>
+  <li><a href="#macos-9" id="toc-macos-9" class="nav-link" data-scroll-target="#macos-9"><strong>macOS</strong></a></li>
+  </ul></li>
+  <li><a href="#sublime-text" id="toc-sublime-text" class="nav-link" data-scroll-target="#sublime-text">Sublime Text</a>
+  <ul class="collapse">
+  <li><a href="#windows-10" id="toc-windows-10" class="nav-link" data-scroll-target="#windows-10"><strong>Windows</strong></a></li>
+  <li><a href="#linux-ubuntu-10" id="toc-linux-ubuntu-10" class="nav-link" data-scroll-target="#linux-ubuntu-10"><strong>Linux (Ubuntu)</strong></a></li>
+  <li><a href="#macos-10" id="toc-macos-10" class="nav-link" data-scroll-target="#macos-10"><strong>macOS</strong></a></li>
+  </ul></li>
+  <li><a href="#visual-studio-code-vscode-1" id="toc-visual-studio-code-vscode-1" class="nav-link" data-scroll-target="#visual-studio-code-vscode-1">Visual Studio Code (VSCode)</a>
+  <ul class="collapse">
+  <li><a href="#windows-11" id="toc-windows-11" class="nav-link" data-scroll-target="#windows-11"><strong>Windows</strong></a></li>
+  <li><a href="#linux-ubuntu-11" id="toc-linux-ubuntu-11" class="nav-link" data-scroll-target="#linux-ubuntu-11"><strong>Linux (Ubuntu)</strong></a></li>
+  <li><a href="#macos-11" id="toc-macos-11" class="nav-link" data-scroll-target="#macos-11"><strong>macOS</strong></a></li>
+  </ul></li>
+  <li><a href="#vpython-library" id="toc-vpython-library" class="nav-link" data-scroll-target="#vpython-library">VPython Library</a>
+  <ul class="collapse">
+  <li><a href="#windows-linux-ubuntu-macos-2" id="toc-windows-linux-ubuntu-macos-2" class="nav-link" data-scroll-target="#windows-linux-ubuntu-macos-2"><strong>Windows, Linux (Ubuntu), macOS</strong></a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#tips-for-students" id="toc-tips-for-students" class="nav-link" data-scroll-target="#tips-for-students">Tips for Students</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(7)</span></div><div class="category" data-category="c2V0dXA=">setup <span class="quarto-category-count">(7)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -1018,18 +1136,18 @@ sudo apt-get install -f</code></pre></li>
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="c2V0dXA=" data-listing-date-sort="1736917200000" data-listing-file-modified-sort="1737321897939" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="546">
+<div class="quarto-post image-right" data-index="0" data-categories="c2V0dXA=" data-listing-date-sort="1737522000000" data-listing-file-modified-sort="1737324412593" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1088">
 <div class="thumbnail">
-<p><a href="./posts/welcome/index.html" class="no-external"></a></p><a href="./posts/welcome/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/welcome/thumbnail.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/welcome/index.html" class="no-external"></a></p>
+<p><a href="./posts/welcome/100.html" class="no-external"></a></p><a href="./posts/welcome/100.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/welcome/100.html" class="no-external"></a></p>
 </div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/welcome/index.html" class="no-external">CMPSC 101 - Data Structures Setup Guide</a>
+<a href="./posts/welcome/100.html" class="no-external">CMPSC 100 - Computational Expression Setup Guide</a>
 </h3>
 <div class="listing-subtitle">
-<a href="./posts/welcome/index.html" class="no-external"></a>
+<a href="./posts/welcome/100.html" class="no-external"></a>
 </div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('c2V0dXA='); return false;">
@@ -1037,13 +1155,211 @@ setup
 </div>
 </div>
 <div class="listing-description">
-<a href="./posts/welcome/index.html" class="no-external"><em>Spring Semester, 2024-2025 Academic Year</em></a>
+<a href="./posts/welcome/100.html" class="no-external"><em>Spring Semester, 2024-2025 Academic Year</em></a>
 </div>
 </div>
 <div class="metadata">
-<a href="./posts/welcome/index.html" class="no-external">
+<a href="./posts/welcome/100.html" class="no-external">
 <div class="listing-date">
-Jan 15, 2025
+Jan 22, 2025
+</div>
+<div class="listing-author">
+Allegheny College ACM Student Chapter
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="c2V0dXA=" data-listing-date-sort="1737522000000" data-listing-file-modified-sort="1737324429968" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1140">
+<div class="thumbnail">
+<p><a href="./posts/welcome/405.html" class="no-external"></a></p><a href="./posts/welcome/405.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/welcome/405.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/welcome/405.html" class="no-external">CMPSC 405 - Deep Learning Setup Guide</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/welcome/405.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('c2V0dXA='); return false;">
+setup
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/welcome/405.html" class="no-external"><em>Spring Semester, 2024-2025 Academic Year</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/welcome/405.html" class="no-external">
+<div class="listing-date">
+Jan 22, 2025
+</div>
+<div class="listing-author">
+Allegheny College ACM Student Chapter
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="c2V0dXA=" data-listing-date-sort="1737522000000" data-listing-file-modified-sort="1737324768259" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1326">
+<div class="thumbnail">
+<p><a href="./posts/welcome/102.html" class="no-external"></a></p><a href="./posts/welcome/102.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/welcome/102.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/welcome/102.html" class="no-external">CMPSC 102 - Discrete Structures Setup Guide</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/welcome/102.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('c2V0dXA='); return false;">
+setup
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/welcome/102.html" class="no-external"><em>Spring Semester, 2024-2025 Academic Year</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/welcome/102.html" class="no-external">
+<div class="listing-date">
+Jan 22, 2025
+</div>
+<div class="listing-author">
+Allegheny College ACM Student Chapter
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="c2V0dXA=" data-listing-date-sort="1737522000000" data-listing-file-modified-sort="1737324426439" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1140">
+<div class="thumbnail">
+<p><a href="./posts/welcome/302.html" class="no-external"></a></p><a href="./posts/welcome/302.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/welcome/302.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/welcome/302.html" class="no-external">CMPSC 302 - Web Design Setup Guide</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/welcome/302.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('c2V0dXA='); return false;">
+setup
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/welcome/302.html" class="no-external"><em>Spring Semester, 2024-2025 Academic Year</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/welcome/302.html" class="no-external">
+<div class="listing-date">
+Jan 22, 2025
+</div>
+<div class="listing-author">
+Allegheny College ACM Student Chapter
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="c2V0dXA=" data-listing-date-sort="1737522000000" data-listing-file-modified-sort="1737324654313" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1835">
+<div class="thumbnail">
+<p><a href="./posts/welcome/202.html" class="no-external"></a></p><a href="./posts/welcome/202.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/welcome/202.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/welcome/202.html" class="no-external">CMPSC 202 - Algorithm Analysis Setup Guide</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/welcome/202.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('c2V0dXA='); return false;">
+setup
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/welcome/202.html" class="no-external"><em>Spring Semester, 2024-2025 Academic Year</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/welcome/202.html" class="no-external">
+<div class="listing-date">
+Jan 22, 2025
+</div>
+<div class="listing-author">
+Allegheny College ACM Student Chapter
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="c2V0dXA=" data-listing-date-sort="1737522000000" data-listing-file-modified-sort="1737324400530" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1245">
+<div class="thumbnail">
+<p><a href="./posts/welcome/101.html" class="no-external"></a></p><a href="./posts/welcome/101.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/welcome/101.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/welcome/101.html" class="no-external">CMPSC 101 - Data Structures Setup Guide</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/welcome/101.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('c2V0dXA='); return false;">
+setup
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/welcome/101.html" class="no-external"><em>Spring Semester, 2024-2025 Academic Year</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/welcome/101.html" class="no-external">
+<div class="listing-date">
+Jan 22, 2025
+</div>
+<div class="listing-author">
+Allegheny College ACM Student Chapter
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-categories="c2V0dXA=" data-listing-date-sort="1737522000000" data-listing-file-modified-sort="1737324417483" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1087">
+<div class="thumbnail">
+<p><a href="./posts/welcome/105.html" class="no-external"></a></p><a href="./posts/welcome/105.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/welcome/105.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/welcome/105.html" class="no-external">CMPSC 105 - Data Exploration Setup Guide</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/welcome/105.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('c2V0dXA='); return false;">
+setup
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/welcome/105.html" class="no-external"><em>Spring Semester, 2024-2025 Academic Year</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/welcome/105.html" class="no-external">
+<div class="listing-date">
+Jan 22, 2025
 </div>
 <div class="listing-author">
 Allegheny College ACM Student Chapter
