@@ -1,0 +1,834 @@
+---
+title: "ACM Guides"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
+---
+
+# **Allegheny College CIS Course Tech Stack Guide**
+*Spring Semester, 2024-2025 Academic Year*
+
+## **Introduction**
+
+Welcome to the *Allegheny College CIS Course Tech Stack Guide* for the Spring semester of the 2024-2025 academic year! This document was created by the Allegheny College ACM Student Chapter as part of our "SOS (Set-up Our Students) Week" initiative. It is designed to help students enrolled in Computer and Information Science (CIS) courses get set up with the necessary tools and software for their classes.
+
+Our goal is to make the setup process simple and stress-free, so you can focus on learning and excelling in your coursework. Whether you’re a beginner or an experienced programmer, this guide is here to provide step-by-step instructions, useful tips, and links to resources for all the tools you’ll need.
+
+
+### **General Setup Resources**
+Below are detailed installation steps for commonly required tools, broken down by operating system. These tools will be used for ACM events and workshops and are also general tools widely used across the Computer and Information Science department. Following these setup instructions will ensure you are prepared for your coursework and extracurricular programming activities.
+
+
+## ACM Required Software
+
+### **Python**
+
+---
+
+#### **Windows**
+
+1. Download Python 3.12.5 from the [official Python website](https://www.python.org/downloads/release/python-3125/).
+2. Run the installer. During installation:
+   - Check the box that says **"Add Python to PATH"** before clicking **"Install Now"**.
+   - Ensure **"Install launcher for all users"** is selected.
+3. Verify the installation:
+   - Open **Command Prompt** and type:
+     ```
+     python --version
+     ```
+     or
+     ```
+     python3 --version
+     ```
+   - Ensure it outputs `Python 3.12.5`.
+
+#### **Linux (Ubuntu)**
+
+To install Python 3.12.5 from source:
+
+1. Update your system packages by running:
+   ```
+   sudo apt update && sudo apt upgrade
+   ```
+2. Install the necessary dependencies with:
+   ```
+   sudo apt install -y build-essential libssl-dev zlib1g-dev \
+   libncurses5-dev libnss3-dev libsqlite3-dev libreadline-dev \
+   libffi-dev curl libbz2-dev
+   ```
+3. Download the source code for Python 3.12.5 from the official website:
+   ```
+   curl -O https://www.python.org/ftp/python/3.12.5/Python-3.12.5.tgz
+   ```
+4. Extract the downloaded tarball and navigate into the directory:
+   ```
+   tar -xf Python-3.12.5.tgz
+   cd Python-3.12.5
+   ```
+5. Build and install Python:
+   ```
+   ./configure --enable-optimizations
+   make -j$(nproc)
+   sudo make altinstall
+   ```
+   **Note:** Use `altinstall` to avoid overwriting the system's default Python.
+6. Verify the installation by typing:
+   ```
+   python3.12 --version
+   ```
+   Ensure it outputs `Python 3.12.5`.
+
+#### **macOS**
+
+1. Download Python 3.12.5 from the [official Python website](https://www.python.org/downloads/release/python-3125/).
+2. Open the downloaded `.pkg` file and follow the on-screen installation instructions.
+3. Verify the installation:
+   - Open **Terminal** and type:
+     ```
+     python3 --version
+     ```
+   - Ensure it outputs `Python 3.12.5`.
+
+**Important Note:**
+
+Python 3.12.5 will be the default version used by the ACM Student Chapter for events and workshops. However, please check your course syllabus to ensure you are using the version specified by your instructor, if different.
+
+---
+
+### **Visual Studio Code (VSCode)**
+
+---
+
+#### **Windows**
+
+1. Download the installer from the [official VSCode website](https://code.visualstudio.com/).
+2. Run the installer and follow the prompts.
+3. Install recommended extensions:
+   - Open VSCode, go to the **Extensions** view (`Ctrl+Shift+X`), and search for the following:
+     - "Intellicode"
+     - "Intellicode API Usage Examples"
+     - "Python"
+     - "Jupyter"
+     - "Markdown All in One"
+     - "Rainbow CSV"
+     - "Ruff"
+   - Click **"Install"** for each.
+
+#### **Linux (Ubuntu)**
+
+1. Download the latest `.deb` package from the [official VSCode website](https://code.visualstudio.com/Download).
+2. Install the `.deb` package using **Terminal**:
+   ```
+   sudo dpkg -i code_*.deb
+   sudo apt-get install -f
+   ```
+3. Open VSCode and install recommended extensions:
+   - Go to the **Extensions** view (`Ctrl+Shift+X`), search for the following, and click **"Install"**:
+     - "Intellicode"
+     - "Intellicode API Usage Examples"
+     - "Python"
+     - "Jupyter"
+     - "Markdown All in One"
+     - "Rainbow CSV"
+     - "Ruff"
+
+#### **macOS**
+
+1. Download the installer from the [official VSCode website](https://code.visualstudio.com/).
+2. Open the downloaded file and drag the VSCode icon into the **Applications** folder.
+3. Install recommended extensions:
+   - Open VSCode, go to the **Extensions** view (`Cmd+Shift+X`), and search for the following:
+     - "Intellicode"
+     - "Intellicode API Usage Examples"
+     - "Python"
+     - "Jupyter"
+     - "Markdown All in One"
+     - "Rainbow CSV"
+     - "Ruff"
+   - Click **"Install"** for each.
+
+---
+
+### **Git and GitHub**
+
+---
+
+#### **Step 1: Install Git**
+
+**Windows:**
+
+1. Download Git from [git-scm.com](https://git-scm.com/downloads) and run the installer.
+2. During installation, select **"Use Git from the Windows Command Prompt"**.
+3. Verify the installation:
+   - Open **Command Prompt** and type:
+     ```
+     git --version
+     ```
+
+**Linux (Ubuntu):**
+
+1. Install Git using **Terminal**:
+   ```
+   sudo apt update && sudo apt install git
+   ```
+2. Verify the installation:
+   ```
+   git --version
+   ```
+
+**macOS:**
+
+1. Install Git using Homebrew:
+   ```
+   brew install git
+   ```
+2. Verify the installation:
+   ```
+   git --version
+   ```
+
+#### **Step 2: Create a GitHub Account**
+
+1. Go to [github.com](https://github.com).
+2. Click **"Sign Up"** and follow the instructions to create an account.
+3. Confirm your email address when prompted.
+
+#### **Step 3: Configure Git**
+
+1. Open your terminal (or Command Prompt).
+2. Set your Git username and email address:
+   ```
+   git config --global user.name "Your Name"
+   git config --global user.email "your.email@example.com"
+   ```
+   **Note:** Use the email address associated with your GitHub account.
+
+#### **Step 4: Generate and Add SSH Keys**
+
+1. Generate a new SSH key:
+   ```
+   ssh-keygen -t ed25519 -C "your.email@example.com"
+   ```
+   When prompted, press **Enter** to save the key in the default location, and optionally add a passphrase.
+2. Start the SSH agent:
+   ```
+   eval "$(ssh-agent -s)"
+   ```
+3. Add your SSH key to the agent:
+   ```
+   ssh-add ~/.ssh/id_ed25519
+   ```
+4. Copy your public key to your clipboard:
+   ```
+   cat ~/.ssh/id_ed25519.pub
+   ```
+5. Add the key to your GitHub account:
+   - Go to [GitHub SSH Settings](https://github.com/settings/keys).
+   - Click **"New SSH Key"**, paste your key, and save.
+
+#### **Step 5: Test the SSH Connection**
+
+Test your SSH connection to GitHub:
+```  
+ssh -T git@github.com
+```
+If successful, you'll see a message confirming the connection.
+
+---
+
+### **Discord**
+
+---
+
+#### **Windows**
+
+1. Download Discord from the [official website](https://discord.com/download).
+2. Open the installer and follow the prompts to install Discord.
+3. Log in or create an account.
+
+#### **Linux (Ubuntu)**
+
+1. Download the `.deb` package from the [Discord website](https://discord.com/download).
+2. Install the `.deb` package:
+   ```
+   sudo dpkg -i discord-*.deb
+   sudo apt-get install -f
+   ```
+3. Open Discord from your applications menu.
+
+#### **macOS**
+
+1. Download Discord from the [official website](https://discord.com/download).
+2. Open the downloaded file and drag the Discord icon into the **Applications** folder.
+3. Log in or create an account.
+
+
+## All Programs
+
+### asdf
+
+---
+
+#### **Windows**
+
+1. asdf is not supported natively on Windows. Use WSL and follow the Linux instructions.
+
+#### **Linux (Ubuntu)**
+
+1. Install dependencies:
+   ```
+   sudo apt install curl git
+   ```
+2. Clone the asdf repository:
+   ```
+   git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.15.0
+   ```
+3. Add asdf to your shell configuration file (e.g., `.bashrc` or `.zshrc`):
+   ```
+   . "$HOME/.asdf/asdf.sh"
+   ```
+4. Restart your terminal and verify installation:
+   ```
+   asdf --version
+   ```
+
+#### **macOS**
+
+1. Install Homebrew if not already installed.
+2. Install asdf:
+   ```
+   brew install asdf
+   ```
+3. Add asdf to your shell configuration file (e.g., `.zshrc`):
+   ```
+   . $(brew --prefix asdf)/libexec/asdf.sh
+   ```
+4. Restart your terminal and verify installation:
+   ```
+   asdf --version
+   ```
+
+---
+
+### devenv
+
+---
+
+#### **Windows**
+
+1. Not natively supported. Use WSL and follow the Linux instructions.
+
+#### **Linux (Ubuntu)**
+
+1. Install the Nix package manager:
+   ```
+   curl -L https://nixos.org/nix/install | sh
+   ```
+2. Install devenv using Nix:
+   ```
+   nix-env -if https://github.com/cachix/devenv/tarball/latest
+   ```
+3. Verify installation:
+   ```
+   devenv --version
+   ```
+
+#### **macOS**
+
+1. Install the Nix package manager:
+   ```
+   curl -L https://nixos.org/nix/install | sh
+   ```
+2. Install devenv using Nix:
+   ```
+   nix-env -if https://github.com/cachix/devenv/tarball/latest
+   ```
+3. Verify installation:
+   ```
+   devenv --version
+   ```
+
+---
+
+### Discord
+
+---
+
+#### **Windows**
+
+1. Download Discord from the [official website](https://discord.com/download).
+2. Open the installer and follow the prompts to install Discord.
+3. Log in or create an account.
+
+#### **Linux (Ubuntu)**
+
+1. Download the `.deb` package from the [Discord website](https://discord.com/download).
+2. Install the `.deb` package:
+   ```
+   sudo dpkg -i discord-*.deb
+   sudo apt-get install -f
+   ```
+3. Open Discord from your applications menu.
+
+#### **macOS**
+
+1. Download Discord from the [official website](https://discord.com/download).
+2. Open the downloaded file and drag the Discord icon into the **Applications** folder.
+3. Log in or create an account.
+
+---
+
+### execexam
+
+---
+
+#### **Windows, Linux (Ubuntu), macOS**
+
+1. Ensure Python 3.7 or later is installed.
+2. Install execexam using pip:
+   ```
+   pip install execexam
+   ```
+3. Verify the installation:
+   ```
+   execexam --help
+   ```
+
+---
+
+### Gatorgrade
+
+---
+
+#### **Windows, Linux (Ubuntu), macOS**
+
+1. Ensure Python 3.8 or later is installed.
+2. Install Gatorgrade globally using pip:
+   ```
+   pip install gatorgrade
+   ```
+3. Verify the installation:
+   ```
+   gatorgrade --help
+   ```
+
+---
+
+### Git and SSH Key Setup
+
+---
+
+#### **Step 1: Install Git**
+
+**Windows:**
+
+1. Download Git from [git-scm.com](https://git-scm.com/downloads) and run the installer.
+2. During installation, select **"Use Git from the Windows Command Prompt"**.
+3. Verify the installation:
+   - Open **Command Prompt** and type:
+     ```
+     git --version
+     ```
+
+**Linux (Ubuntu):**
+
+1. Install Git using **Terminal**:
+   ```
+   sudo apt update && sudo apt install git
+   ```
+2. Verify the installation:
+   ```
+   git --version
+   ```
+
+**macOS:**
+
+1. Install Git using Homebrew:
+   ```
+   brew install git
+   ```
+2. Verify the installation:
+   ```
+   git --version
+   ```
+
+#### **Step 2: Create a GitHub Account**
+
+1. Go to [github.com](https://github.com).
+2. Click **"Sign Up"** and follow the instructions to create an account.
+3. Confirm your email address when prompted.
+
+#### **Step 3: Configure Git**
+
+1. Open your terminal (or Command Prompt).
+2. Set your Git username and email address:
+   ```
+   git config --global user.name "Your Name"
+   git config --global user.email "your.email@example.com"
+   ```
+   **Note:** Use the email address associated with your GitHub account.
+
+#### **Step 4: Generate and Add SSH Keys**
+
+1. Generate a new SSH key:
+   ```
+   ssh-keygen -t ed25519 -C "your.email@example.com"
+   ```
+   When prompted, press **Enter** to save the key in the default location, and optionally add a passphrase.
+2. Start the SSH agent:
+   ```
+   eval "$(ssh-agent -s)"
+   ```
+3. Add your SSH key to the agent:
+   ```
+   ssh-add ~/.ssh/id_ed25519
+   ```
+4. Copy your public key to your clipboard:
+   ```
+   cat ~/.ssh/id_ed25519.pub
+   ```
+5. Add the key to your GitHub account:
+   - Go to [GitHub SSH Settings](https://github.com/settings/keys).
+   - Click **"New SSH Key"**, paste your key, and save.
+
+#### **Step 5: Test the SSH Connection**
+
+Test your SSH connection to GitHub:
+```  
+ssh -T git@github.com
+```
+If successful, you'll see a message confirming the connection.
+
+---
+
+### Google Colab
+
+---
+
+#### **All Platforms**
+
+1. Open your Google Drive and create a folder named `Colab Notebooks`.
+2. Open [Google Colab](https://colab.research.google.com/).
+3. Save your notebook to Google Drive by clicking **File > Save a copy in Drive**.
+4. To find the Colab directory in Google Drive:
+   - Open Google Drive and look for the `Colab Notebooks` folder. Any notebooks saved in Colab will automatically appear here.
+5. Uploading/downloading notebooks to/from GitHub without Git:
+   - **Uploading:** Download the `.ipynb` file from GitHub and upload it directly to Google Colab.
+   - **Downloading:** Use **File > Download > Download .ipynb** in Colab to save your notebook and then manually upload it to GitHub.
+
+---
+
+### mise
+
+---
+
+#### **Windows**
+
+1. Not natively supported. Use WSL and follow the Linux instructions.
+
+#### **Linux (Ubuntu)**
+
+1. Install mise using the official script:
+   ```
+   curl https://mise.run | sh
+   ```
+2. Add mise to your shell configuration:
+   ```
+   echo 'eval "$(mise activate bash)"' >> ~/.bashrc
+   ```
+3. Restart your terminal and verify installation:
+   ```
+   mise --version
+   ```
+
+#### **macOS**
+
+1. Install mise using the official script:
+   ```
+   curl https://mise.run | sh
+   ```
+2. Add mise to your shell configuration:
+   ```
+   echo 'eval "$(mise activate zsh)"' >> ~/.zshrc
+   ```
+3. Restart your terminal and verify installation:
+   ```
+   mise --version
+   ```
+
+---
+
+### Poetry
+
+---
+
+#### **Windows**
+
+1. Open Command Prompt or PowerShell.
+2. Install Poetry using the official installer:
+   ```
+   curl -sSL https://install.python-poetry.org | python3 -
+   ```
+3. Add Poetry to your PATH by editing your environment variables or following the on-screen instructions after installation.
+4. Verify the installation:
+   ```
+   poetry --version
+   ```
+
+#### **Linux (Ubuntu)**
+
+1. Open a terminal.
+2. Install Poetry:
+   ```
+   curl -sSL https://install.python-poetry.org | python3 -
+   ```
+3. Add Poetry to your PATH:
+   ```
+   export PATH="$HOME/.local/bin:$PATH"
+   ```
+4. Verify the installation:
+   ```
+   poetry --version
+   ```
+
+#### **macOS**
+
+1. Open Terminal.
+2. Install Poetry:
+   ```
+   curl -sSL https://install.python-poetry.org | python3 -
+   ```
+3. Add Poetry to your PATH if necessary.
+4. Verify the installation:
+   ```
+   poetry --version
+   ```
+
+---
+
+### Python 3.12.5
+
+---
+
+#### **Windows**
+
+1. Download Python 3.12.5 from the [official Python website](https://www.python.org/downloads/release/python-3125/).
+2. Run the installer. During installation:
+   - Check the box that says **"Add Python to PATH"** before clicking **"Install Now"**.
+   - Ensure **"Install launcher for all users"** is selected.
+3. Verify the installation:
+   - Open **Command Prompt** and type:
+     ```
+     python --version
+     ```
+     or
+     ```
+     python3 --version
+     ```
+   - Ensure it outputs `Python 3.12.5`.
+
+#### **Linux (Ubuntu)**
+
+To install Python 3.12.5 from source:
+
+1. Update your system packages by running:
+   ```
+   sudo apt update && sudo apt upgrade
+   ```
+2. Install the necessary dependencies with:
+   ```
+   sudo apt install -y build-essential libssl-dev zlib1g-dev \
+   libncurses5-dev libnss3-dev libsqlite3-dev libreadline-dev \
+   libffi-dev curl libbz2-dev
+   ```
+3. Download the source code for Python 3.12.5 from the official website:
+   ```
+   curl -O https://www.python.org/ftp/python/3.12.5/Python-3.12.5.tgz
+   ```
+4. Extract the downloaded tarball and navigate into the directory:
+   ```
+   tar -xf Python-3.12.5.tgz
+   cd Python-3.12.5
+   ```
+5. Build and install Python:
+   ```
+   ./configure --enable-optimizations
+   make -j$(nproc)
+   sudo make altinstall
+   ```
+   **Note:** Use `altinstall` to avoid overwriting the system's default Python.
+6. Verify the installation by typing:
+   ```
+   python3.12 --version
+   ```
+   Ensure it outputs `Python 3.12.5`.
+
+#### **macOS**
+
+1. Download Python 3.12.5 from the [official Python website](https://www.python.org/downloads/release/python-3125/).
+2. Open the downloaded `.pkg` file and follow the on-screen installation instructions.
+3. Verify the installation:
+   - Open **Terminal** and type:
+     ```
+     python3 --version
+     ```
+   - Ensure it outputs `Python 3.12.5`.
+
+**Important Note:**
+
+Python 3.12.5 will be the default version used by the ACM Student Chapter for events and workshops. However, please check your course syllabus to ensure you are using the version specified by your instructor, if different.
+
+---
+
+### Quarto
+
+---
+
+#### **Windows**
+
+1. Download Quarto from the [official website](https://quarto.org/docs/get-started/).
+2. Run the installer and follow the prompts.
+3. Verify installation:
+   ```
+   quarto check
+   ```
+
+#### **Linux (Ubuntu)**
+
+1. Download the `.deb` file from the [Quarto website](https://quarto.org/docs/get-started/).
+2. Install it using:
+   ```
+   sudo dpkg -i quarto-*.deb
+   ```
+3. Verify installation:
+   ```
+   quarto check
+   ```
+
+#### **macOS**
+
+1. Download the `.pkg` file from the [Quarto website](https://quarto.org/docs/get-started/).
+2. Open the file and follow the prompts to install.
+3. Verify installation:
+   ```
+   quarto check
+   ```
+
+---
+
+### Sublime Text
+
+---
+
+#### **Windows**
+
+1. Download Sublime Text from the [official website](https://www.sublimetext.com/download).
+2. Open the installer and follow the prompts to complete the installation.
+3. Launch Sublime Text from the Start menu.
+
+#### **Linux (Ubuntu)**
+
+1. Add the Sublime Text repository:
+   ```
+   wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+   echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+   ```
+2. Update and install Sublime Text:
+   ```
+   sudo apt update
+   sudo apt install sublime-text
+   ```
+
+#### **macOS**
+
+1. Download Sublime Text from the [official website](https://www.sublimetext.com/download).
+2. Open the downloaded file and drag the Sublime Text icon into the **Applications** folder.
+3. Launch Sublime Text from Spotlight or the Applications folder.
+
+---
+
+### Visual Studio Code (VSCode)
+
+---
+
+#### **Windows**
+
+1. Download the installer from the [official VSCode website](https://code.visualstudio.com/).
+2. Run the installer and follow the prompts.
+3. Install recommended extensions:
+   - Open VSCode, go to the **Extensions** view (`Ctrl+Shift+X`), and search for the following:
+     - "Intellicode"
+     - "Intellicode API Usage Examples"
+     - "Python"
+     - "Jupyter"
+     - "Markdown All in One"
+     - "Rainbow CSV"
+     - "Ruff"
+   - Click **"Install"** for each.
+
+#### **Linux (Ubuntu)**
+
+1. Download the latest `.deb` package from the [official VSCode website](https://code.visualstudio.com/Download).
+2. Install the `.deb` package using **Terminal**:
+   ```
+   sudo dpkg -i code_*.deb
+   sudo apt-get install -f
+   ```
+3. Open VSCode and install recommended extensions:
+   - Go to the **Extensions** view (`Ctrl+Shift+X`), search for the following, and click **"Install"**:
+     - "Intellicode"
+     - "Intellicode API Usage Examples"
+     - "Python"
+     - "Jupyter"
+     - "Markdown All in One"
+     - "Rainbow CSV"
+     - "Ruff"
+
+#### **macOS**
+
+1. Download the installer from the [official VSCode website](https://code.visualstudio.com/).
+2. Open the downloaded file and drag the VSCode icon into the **Applications** folder.
+3. Install recommended extensions:
+   - Open VSCode, go to the **Extensions** view (`Cmd+Shift+X`), and search for the following:
+     - "Intellicode"
+     - "Intellicode API Usage Examples"
+     - "Python"
+     - "Jupyter"
+     - "Markdown All in One"
+     - "Rainbow CSV"
+     - "Ruff"
+   - Click **"Install"** for each.
+
+---
+
+### VPython Library
+
+---
+
+#### **Windows, Linux (Ubuntu), macOS**
+
+1. Ensure Python 3.7 or later is installed.
+2. Install VPython using pip:
+   ```
+   pip install vpython
+   ```
+3. Verify installation by running a simple VPython script:
+   ```python
+   from vpython import sphere
+   sphere()
+   ```
+   This should open a window with a rendered 3D sphere.
+
+---
+
+## Tips for Students
+
+- Start your installations early to avoid last-minute issues.
+- Refer to ACM SOS Week sessions for setup help.
+- Follow your instructor's course syllabus for specific software requirements.
