@@ -1,5 +1,5 @@
 ---
-title: "Allegheny College CIS Course Tech Stack Guides"
+title: "Allegheny College CIS Course Tech Stack Guide"
 subtitle: "Spring Semester, 2024-2025 Academic Year"
 listing:
   contents: posts
