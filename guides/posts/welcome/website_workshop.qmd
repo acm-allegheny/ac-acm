@@ -1,0 +1,139 @@
+---
+title: "Personal Website Workshop"
+author: "Allegheny College ACM Student Chapter"
+date: "2025-03-20"
+categories: [workshop]
+---
+
+# **Personal Website Workshop**
+
+## **Event Details**
+
+- **Date:** April 4, 2025
+- **Time:** 4:00 PM – 6:00 PM
+- **Location:** Alden Hall, Room 101
+- **Instructor:** Alish Chhetri
+
+## **Workshop Purpose**
+
+This workshop is designed to help participants create and publish a simple personal website using basic HTML and CSS, with optional JavaScript. The goal is to introduce core web development concepts in a clear, beginner-friendly format, and help attendees get their site live by the end of the session.
+
+## **What Will Be Covered**
+
+### **Introduction to HTML**
+Understanding the structure of a webpage and learning how to add text, links, images, and sections.
+
+### **Basic CSS Styling**
+How to style the page with colors, fonts, layout techniques, and simple visual adjustments.
+
+### **Hosting with Netlify**
+How to upload the finished website to Netlify using the drag-and-drop method, and make it publicly accessible. We'll also cover basic updates and custom domain setup.
+
+## **Requirements for Participants**
+
+- Visual Studio Code (code editor)
+- No prior coding experience is required
+
+## **Expected Outcomes**
+
+By the end of the workshop, participants will:
+
+- Understand the basics of how websites are built and styled
+- Create a simple personal site with their own content
+- Successfully publish their site using Netlify
+- Gain confidence to continue learning and expanding their site
+
+---
+
+## **Pre-Workshop Setup**
+
+Please install the following software before attending the workshop to ensure a smooth experience:
+
+### **Visual Studio Code Installation**
+
+#### **Windows**
+
+1. Download the installer from the [official VSCode website](https://code.visualstudio.com/).
+2. Run the installer and follow the prompts.
+3. Install recommended extensions:
+   - Open VSCode, go to the **Extensions** view (`Ctrl+Shift+X`), and search for the following:
+     - "Live Server"
+   - Click **"Install"**.
+
+#### **Linux (Ubuntu)**
+
+1. Download the latest `.deb` package from the [official VSCode website](https://code.visualstudio.com/Download).
+2. Install the `.deb` package using **Terminal**:
+   ```
+   sudo dpkg -i code_*.deb
+   sudo apt-get install -f
+   ```
+3. Open VSCode and install the recommended extensions listed above.
+
+#### **macOS**
+
+1. Download the installer from the [official VSCode website](https://code.visualstudio.com/).
+2. Open the downloaded file and drag the VSCode icon into the **Applications** folder.
+3. Install the recommended extensions listed above using the Extensions view (`Cmd+Shift+X`).
+
+### **Node.js and npm Installation** 
+
+Node.js and npm are required to use the Netlify CLI (optional but helpful).
+
+#### **Windows**
+
+1. Download the installer from the [official Node.js website](https://nodejs.org/).
+2. Run the installer and follow the prompts (choose the LTS version).
+3. Verify the installation by opening Command Prompt and typing:
+   ```
+   node --version
+   npm --version
+   ```
+
+#### **Linux (Ubuntu)**
+
+1. Open Terminal and run the following commands:
+   ```
+   sudo apt update
+   sudo apt install nodejs npm
+   ```
+2. Verify installation:
+   ```
+   node --version
+   npm --version
+   ```
+
+#### **macOS**
+
+1. Download the installer from the [official Node.js website](https://nodejs.org/).
+2. Run the installer and follow the prompts (choose the LTS version).
+3. Verify installation by opening Terminal and typing:
+   ```
+   node --version
+   npm --version
+   ```
+
+### **Create a Netlify Account**
+
+1. Go to [netlify.com](https://www.netlify.com/).
+2. Click **"Sign Up"** and create a free account.
+3. You can sign up using your GitHub account or email address.
+
+#### **Netlify CLI (Optional)**
+
+After installing Node.js and npm, you can install the Netlify CLI:
+
+1. Open Terminal/Command Prompt and run:
+   ```
+   npm install netlify-cli -g
+   ```
+2. Login to your Netlify account:
+   ```
+   netlify login
+   ```
+
+### **Additional Resources**
+
+- [HTML Basics - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
+- [CSS Basics - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
+- [Introduction to Netlify - Official Guide](https://docs.netlify.com/get-started/)
