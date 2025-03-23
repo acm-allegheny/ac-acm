@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Allegheny College ACM Student Chapter">
-<meta name="dcterms.date" content="2025-01-22">
+<meta name="dcterms.date" content="2025-04-09">
 
-<title>CMPSC 102 - Discrete Structures Setup Guide – ACM Guides</title>
+<title>Personal Chatbot Workshop – ACM Guides</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -106,9 +106,9 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">CMPSC 102 - Discrete Structures Setup Guide</h1>
+      <h1 class="title">Personal Chatbot Workshop</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">setup</div>
+                <div class="quarto-category">workshop</div>
               </div>
                   </div>
   </div>
@@ -126,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 22, 2025</p>
+        <p class="date">April 9, 2025</p>
       </div>
     </div>
     
@@ -142,41 +142,47 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#allegheny-college-cis-course-tech-stack-guide" id="toc-allegheny-college-cis-course-tech-stack-guide" class="nav-link active" data-scroll-target="#allegheny-college-cis-course-tech-stack-guide"><strong>Allegheny College CIS Course Tech Stack Guide</strong></a>
+  <li><a href="#personal-chatbot-workshop" id="toc-personal-chatbot-workshop" class="nav-link active" data-scroll-target="#personal-chatbot-workshop"><strong>Personal Chatbot Workshop</strong></a>
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><strong>Introduction</strong></a></li>
-  <li><a href="#cmpsc-102-required-software" id="toc-cmpsc-102-required-software" class="nav-link" data-scroll-target="#cmpsc-102-required-software"><strong>CMPSC 102 Required Software</strong></a>
+  <li><a href="#event-details" id="toc-event-details" class="nav-link" data-scroll-target="#event-details"><strong>Event Details</strong></a></li>
+  <li><a href="#workshop-purpose" id="toc-workshop-purpose" class="nav-link" data-scroll-target="#workshop-purpose"><strong>Workshop Purpose</strong></a></li>
+  <li><a href="#what-will-be-covered" id="toc-what-will-be-covered" class="nav-link" data-scroll-target="#what-will-be-covered"><strong>What Will Be Covered</strong></a>
   <ul class="collapse">
-  <li><a href="#git-github-and-ssh-key-setup" id="toc-git-github-and-ssh-key-setup" class="nav-link" data-scroll-target="#git-github-and-ssh-key-setup"><strong>Git, GitHub, and SSH Key Setup</strong></a>
-  <ul class="collapse">
-  <li><a href="#step-1-install-git" id="toc-step-1-install-git" class="nav-link" data-scroll-target="#step-1-install-git"><strong>Step 1: Install Git</strong></a></li>
-  <li><a href="#step-2-create-a-github-account" id="toc-step-2-create-a-github-account" class="nav-link" data-scroll-target="#step-2-create-a-github-account"><strong>Step 2: Create a GitHub Account</strong></a></li>
-  <li><a href="#step-3-configure-git" id="toc-step-3-configure-git" class="nav-link" data-scroll-target="#step-3-configure-git"><strong>Step 3: Configure Git</strong></a></li>
-  <li><a href="#step-4-generate-and-add-ssh-keys" id="toc-step-4-generate-and-add-ssh-keys" class="nav-link" data-scroll-target="#step-4-generate-and-add-ssh-keys"><strong>Step 4: Generate and Add SSH Keys</strong></a></li>
-  <li><a href="#step-5-test-the-ssh-connection" id="toc-step-5-test-the-ssh-connection" class="nav-link" data-scroll-target="#step-5-test-the-ssh-connection"><strong>Step 5: Test the SSH Connection</strong></a></li>
+  <li><a href="#what-were-building" id="toc-what-were-building" class="nav-link" data-scroll-target="#what-were-building"><strong>What We’re Building</strong></a></li>
+  <li><a href="#getting-set-up" id="toc-getting-set-up" class="nav-link" data-scroll-target="#getting-set-up"><strong>Getting Set Up</strong></a></li>
+  <li><a href="#downloading-the-model" id="toc-downloading-the-model" class="nav-link" data-scroll-target="#downloading-the-model"><strong>Downloading the Model</strong></a></li>
+  <li><a href="#using-the-chatbot" id="toc-using-the-chatbot" class="nav-link" data-scroll-target="#using-the-chatbot"><strong>Using the Chatbot</strong></a></li>
+  <li><a href="#basic-customization" id="toc-basic-customization" class="nav-link" data-scroll-target="#basic-customization"><strong>Basic Customization</strong></a></li>
   </ul></li>
-  <li><a href="#python" id="toc-python" class="nav-link" data-scroll-target="#python"><strong>Python</strong></a>
+  <li><a href="#requirements-for-participants" id="toc-requirements-for-participants" class="nav-link" data-scroll-target="#requirements-for-participants"><strong>Requirements for Participants</strong></a></li>
+  <li><a href="#expected-outcomes" id="toc-expected-outcomes" class="nav-link" data-scroll-target="#expected-outcomes"><strong>Expected Outcomes</strong></a></li>
+  <li><a href="#pre-workshop-setup" id="toc-pre-workshop-setup" class="nav-link" data-scroll-target="#pre-workshop-setup"><strong>Pre-Workshop Setup</strong></a>
+  <ul class="collapse">
+  <li><a href="#visual-studio-code-vscode" id="toc-visual-studio-code-vscode" class="nav-link" data-scroll-target="#visual-studio-code-vscode"><strong>Visual Studio Code (VSCode)</strong></a>
   <ul class="collapse">
   <li><a href="#windows" id="toc-windows" class="nav-link" data-scroll-target="#windows"><strong>Windows</strong></a></li>
   <li><a href="#linux-ubuntu" id="toc-linux-ubuntu" class="nav-link" data-scroll-target="#linux-ubuntu"><strong>Linux (Ubuntu)</strong></a></li>
   <li><a href="#macos" id="toc-macos" class="nav-link" data-scroll-target="#macos"><strong>macOS</strong></a></li>
   </ul></li>
-  <li><a href="#visual-studio-code-vscode" id="toc-visual-studio-code-vscode" class="nav-link" data-scroll-target="#visual-studio-code-vscode"><strong>Visual Studio Code (VSCode)</strong></a>
+  <li><a href="#python" id="toc-python" class="nav-link" data-scroll-target="#python"><strong>Python</strong></a>
   <ul class="collapse">
   <li><a href="#windows-1" id="toc-windows-1" class="nav-link" data-scroll-target="#windows-1"><strong>Windows</strong></a></li>
   <li><a href="#linux-ubuntu-1" id="toc-linux-ubuntu-1" class="nav-link" data-scroll-target="#linux-ubuntu-1"><strong>Linux (Ubuntu)</strong></a></li>
   <li><a href="#macos-1" id="toc-macos-1" class="nav-link" data-scroll-target="#macos-1"><strong>macOS</strong></a></li>
   </ul></li>
-  <li><a href="#poetry" id="toc-poetry" class="nav-link" data-scroll-target="#poetry">Poetry</a>
+  <li><a href="#visual-studio-code-vscode-1" id="toc-visual-studio-code-vscode-1" class="nav-link" data-scroll-target="#visual-studio-code-vscode-1"><strong>Visual Studio Code (VSCode)</strong></a>
   <ul class="collapse">
   <li><a href="#windows-2" id="toc-windows-2" class="nav-link" data-scroll-target="#windows-2"><strong>Windows</strong></a></li>
   <li><a href="#linux-ubuntu-2" id="toc-linux-ubuntu-2" class="nav-link" data-scroll-target="#linux-ubuntu-2"><strong>Linux (Ubuntu)</strong></a></li>
   <li><a href="#macos-2" id="toc-macos-2" class="nav-link" data-scroll-target="#macos-2"><strong>macOS</strong></a></li>
   </ul></li>
-  <li><a href="#gatorgrade" id="toc-gatorgrade" class="nav-link" data-scroll-target="#gatorgrade">Gatorgrade</a>
+  <li><a href="#ollama-installation" id="toc-ollama-installation" class="nav-link" data-scroll-target="#ollama-installation"><strong>Ollama Installation</strong></a>
   <ul class="collapse">
-  <li><a href="#windows-linux-ubuntu-macos" id="toc-windows-linux-ubuntu-macos" class="nav-link" data-scroll-target="#windows-linux-ubuntu-macos"><strong>Windows, Linux (Ubuntu), macOS</strong></a></li>
+  <li><a href="#windows-3" id="toc-windows-3" class="nav-link" data-scroll-target="#windows-3"><strong>Windows</strong></a></li>
+  <li><a href="#linux" id="toc-linux" class="nav-link" data-scroll-target="#linux"><strong>Linux</strong></a></li>
+  <li><a href="#macos-3" id="toc-macos-3" class="nav-link" data-scroll-target="#macos-3"><strong>macOS</strong></a></li>
   </ul></li>
+  <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources"><strong>Additional Resources</strong></a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -189,160 +195,73 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="allegheny-college-cis-course-tech-stack-guide" class="level1">
-<h1><strong>Allegheny College CIS Course Tech Stack Guide</strong></h1>
-<p><em>Spring Semester, 2024-2025 Academic Year</em></p>
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction"><strong>Introduction</strong></h2>
-<p>Welcome to the <em>Allegheny College CIS Course Tech Stack Guide</em> for CMPSC 102 - Discrete Structures. This document was created by the Allegheny College ACM Student Chapter as part of our “SOS (Set-up Our Students) Week” initiative. It is designed to help students enrolled in CMPSC 102 get set up with the necessary tools and software for their class.</p>
-<p>Our goal is to make the setup process simple and stress-free, so you can focus on learning and excelling in your coursework. Whether you’re a beginner or an experienced programmer, this guide is here to provide step-by-step instructions, useful tips, and links to resources for all the tools you’ll need.</p>
-</section>
-<section id="cmpsc-102-required-software" class="level2">
-<h2 class="anchored" data-anchor-id="cmpsc-102-required-software"><strong>CMPSC 102 Required Software</strong></h2>
-<section id="git-github-and-ssh-key-setup" class="level3">
-<h3 class="anchored" data-anchor-id="git-github-and-ssh-key-setup"><strong>Git, GitHub, and SSH Key Setup</strong></h3>
-<hr>
-<section id="step-1-install-git" class="level4">
-<h4 class="anchored" data-anchor-id="step-1-install-git"><strong>Step 1: Install Git</strong></h4>
-<p><strong>Windows:</strong></p>
-<ol type="1">
-<li>Download Git from <a href="https://git-scm.com/downloads">git-scm.com</a> and run the installer.</li>
-<li>During installation, select <strong>“Use Git from the Windows Command Prompt”</strong>.</li>
-<li>Verify the installation:
+<section id="personal-chatbot-workshop" class="level1">
+<h1><strong>Personal Chatbot Workshop</strong></h1>
+<section id="event-details" class="level2">
+<h2 class="anchored" data-anchor-id="event-details"><strong>Event Details</strong></h2>
 <ul>
-<li><p>Open <strong>Command Prompt</strong> and type:</p>
-<pre><code>git --version</code></pre></li>
-</ul></li>
-</ol>
-<p><strong>Linux (Ubuntu):</strong></p>
-<ol type="1">
-<li><p>Install Git using <strong>Terminal</strong>:</p>
-<pre><code>sudo apt update &amp;&amp; sudo apt install git</code></pre></li>
-<li><p>Verify the installation:</p>
-<pre><code>git --version</code></pre></li>
-</ol>
-<p><strong>macOS:</strong></p>
-<ol type="1">
-<li><p>Install Git using Homebrew:</p>
-<pre><code>brew install git</code></pre></li>
-<li><p>Verify the installation:</p>
-<pre><code>git --version</code></pre></li>
-</ol>
+<li><strong>Date:</strong> April 9, 2025</li>
+<li><strong>Time:</strong> 4:00 PM – 6:00 PM</li>
+<li><strong>Location:</strong> Alden Hall, Room 101</li>
+<li><strong>Instructor:</strong> Alish Chhetri</li>
+</ul>
 </section>
-<section id="step-2-create-a-github-account" class="level4">
-<h4 class="anchored" data-anchor-id="step-2-create-a-github-account"><strong>Step 2: Create a GitHub Account</strong></h4>
-<ol type="1">
-<li>Go to <a href="https://github.com">github.com</a>.</li>
-<li>Click <strong>“Sign Up”</strong> and follow the instructions to create an account.</li>
-<li>Confirm your email address when prompted.</li>
-</ol>
+<section id="workshop-purpose" class="level2">
+<h2 class="anchored" data-anchor-id="workshop-purpose"><strong>Workshop Purpose</strong></h2>
+<p>This workshop will show participants how to set up their own personal AI chatbot on their computer using a tool called Ollama and the Deepseek language model. The goal is to make it as simple as possible for anyone, including those with no coding or AI experience, to run a chatbot similar to ChatGPT entirely on their own machine.</p>
 </section>
-<section id="step-3-configure-git" class="level4">
-<h4 class="anchored" data-anchor-id="step-3-configure-git"><strong>Step 3: Configure Git</strong></h4>
-<ol type="1">
-<li><p>Open your terminal (or Command Prompt).</p></li>
-<li><p>Set your Git username and email address:</p>
-<pre><code>git config --global user.name "Your Name"
-git config --global user.email "your.email@example.com"</code></pre>
-<p><strong>Note:</strong> Use the email address associated with your GitHub account.</p></li>
-</ol>
+<section id="what-will-be-covered" class="level2">
+<h2 class="anchored" data-anchor-id="what-will-be-covered"><strong>What Will Be Covered</strong></h2>
+<section id="what-were-building" class="level3">
+<h3 class="anchored" data-anchor-id="what-were-building"><strong>What We’re Building</strong></h3>
+<p>A basic personal chatbot that you can run on your computer, talk to, and customize.</p>
 </section>
-<section id="step-4-generate-and-add-ssh-keys" class="level4">
-<h4 class="anchored" data-anchor-id="step-4-generate-and-add-ssh-keys"><strong>Step 4: Generate and Add SSH Keys</strong></h4>
-<ol type="1">
-<li><p>Generate a new SSH key:</p>
-<pre><code>ssh-keygen -t ed25519 -C "your.email@example.com"</code></pre>
-<p>When prompted, press <strong>Enter</strong> to save the key in the default location, and optionally add a passphrase.</p></li>
-<li><p>Start the SSH agent:</p>
-<pre><code>eval "$(ssh-agent -s)"</code></pre></li>
-<li><p>Add your SSH key to the agent:</p>
-<pre><code>ssh-add ~/.ssh/id_ed25519</code></pre></li>
-<li><p>Copy your public key to your clipboard:</p>
-<pre><code>cat ~/.ssh/id_ed25519.pub</code></pre></li>
-<li><p>Add the key to your GitHub account:</p>
+<section id="getting-set-up" class="level3">
+<h3 class="anchored" data-anchor-id="getting-set-up"><strong>Getting Set Up</strong></h3>
+<p>Installing the required tools:</p>
 <ul>
-<li>Go to <a href="https://github.com/settings/keys">GitHub SSH Settings</a>.</li>
-<li>Click <strong>“New SSH Key”</strong>, paste your key, and save.</li>
-</ul></li>
-</ol>
+<li>Visual Studio Code</li>
+<li>Python</li>
+<li>Ollama</li>
+</ul>
 </section>
-<section id="step-5-test-the-ssh-connection" class="level4">
-<h4 class="anchored" data-anchor-id="step-5-test-the-ssh-connection"><strong>Step 5: Test the SSH Connection</strong></h4>
-<p>Test your SSH connection to GitHub:</p>
-<pre><code>ssh -T git@github.com</code></pre>
-<p>If successful, you’ll see a message confirming the connection.</p>
-<hr>
+<section id="downloading-the-model" class="level3">
+<h3 class="anchored" data-anchor-id="downloading-the-model"><strong>Downloading the Model</strong></h3>
+<p>Using Ollama to download and run the Deepseek model.</p>
+</section>
+<section id="using-the-chatbot" class="level3">
+<h3 class="anchored" data-anchor-id="using-the-chatbot"><strong>Using the Chatbot</strong></h3>
+<p>How to talk to your chatbot through the terminal or a simple interface.</p>
+</section>
+<section id="basic-customization" class="level3">
+<h3 class="anchored" data-anchor-id="basic-customization"><strong>Basic Customization</strong></h3>
+<p>Editing a few lines to change how the chatbot responds or what kind of personality it has.</p>
 </section>
 </section>
-<section id="python" class="level3">
-<h3 class="anchored" data-anchor-id="python"><strong>Python</strong></h3>
-<hr>
-<section id="windows" class="level4">
-<h4 class="anchored" data-anchor-id="windows"><strong>Windows</strong></h4>
-<ol type="1">
-<li>Download Python 3.12.5 from the <a href="https://www.python.org/downloads/release/python-3125/">official Python website</a>.</li>
-<li>Run the installer. During installation:
+<section id="requirements-for-participants" class="level2">
+<h2 class="anchored" data-anchor-id="requirements-for-participants"><strong>Requirements for Participants</strong></h2>
 <ul>
-<li>Check the box that says <strong>“Add Python to PATH”</strong> before clicking <strong>“Install Now”</strong>.</li>
-<li>Ensure <strong>“Install launcher for all users”</strong> is selected.</li>
-</ul></li>
-<li>Verify the installation:
+<li>Visual Studio Code installed</li>
+<li>Python 3.12.8</li>
+<li>No coding or technical experience needed</li>
+</ul>
+</section>
+<section id="expected-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="expected-outcomes"><strong>Expected Outcomes</strong></h2>
+<p>By the end of the session, participants will:</p>
 <ul>
-<li><p>Open <strong>Command Prompt</strong> and type:</p>
-<pre><code>python --version</code></pre>
-<p>or</p>
-<pre><code>python3 --version</code></pre></li>
-<li><p>Ensure it outputs <code>Python 3.12.5</code>.</p></li>
-</ul></li>
-</ol>
+<li>Have a working AI chatbot running on their own computer</li>
+<li>Understand how to use it and adjust its basic behavior</li>
+<li>Feel confident experimenting with it on their own after the workshop</li>
+</ul>
 </section>
-<section id="linux-ubuntu" class="level4">
-<h4 class="anchored" data-anchor-id="linux-ubuntu"><strong>Linux (Ubuntu)</strong></h4>
-<p>To install Python 3.12.5 from source:</p>
-<ol type="1">
-<li><p>Update your system packages by running:</p>
-<pre><code>sudo apt update &amp;&amp; sudo apt upgrade</code></pre></li>
-<li><p>Install the necessary dependencies with:</p>
-<pre><code>sudo apt install -y build-essential libssl-dev zlib1g-dev \
-libncurses5-dev libnss3-dev libsqlite3-dev libreadline-dev \
-libffi-dev curl libbz2-dev</code></pre></li>
-<li><p>Download the source code for Python 3.12.5 from the official website:</p>
-<pre><code>curl -O https://www.python.org/ftp/python/3.12.5/Python-3.12.5.tgz</code></pre></li>
-<li><p>Extract the downloaded tarball and navigate into the directory:</p>
-<pre><code>tar -xf Python-3.12.5.tgz
-cd Python-3.12.5</code></pre></li>
-<li><p>Build and install Python:</p>
-<pre><code>./configure --enable-optimizations
-make -j$(nproc)
-sudo make altinstall</code></pre>
-<p><strong>Note:</strong> Use <code>altinstall</code> to avoid overwriting the system’s default Python.</p></li>
-<li><p>Verify the installation by typing:</p>
-<pre><code>python3.12 --version</code></pre>
-<p>Ensure it outputs <code>Python 3.12.5</code>.</p></li>
-</ol>
-</section>
-<section id="macos" class="level4">
-<h4 class="anchored" data-anchor-id="macos"><strong>macOS</strong></h4>
-<ol type="1">
-<li>Download Python 3.12.5 from the <a href="https://www.python.org/downloads/release/python-3125/">official Python website</a>.</li>
-<li>Open the downloaded <code>.pkg</code> file and follow the on-screen installation instructions.</li>
-<li>Verify the installation:
-<ul>
-<li><p>Open <strong>Terminal</strong> and type:</p>
-<pre><code>python3 --version</code></pre></li>
-<li><p>Ensure it outputs <code>Python 3.12.5</code>.</p></li>
-</ul></li>
-</ol>
-<p><strong>Important Note:</strong></p>
-<p>Python 3.12.5 will be the default version used by the ACM Student Chapter for events and workshops. However, please check your course syllabus to ensure you are using the version specified by your instructor, if different.</p>
-<hr>
-</section>
-</section>
+<section id="pre-workshop-setup" class="level2">
+<h2 class="anchored" data-anchor-id="pre-workshop-setup"><strong>Pre-Workshop Setup</strong></h2>
+<p>Please install the following software before attending the workshop to ensure a smooth experience:</p>
 <section id="visual-studio-code-vscode" class="level3">
 <h3 class="anchored" data-anchor-id="visual-studio-code-vscode"><strong>Visual Studio Code (VSCode)</strong></h3>
-<hr>
-<section id="windows-1" class="level4">
-<h4 class="anchored" data-anchor-id="windows-1"><strong>Windows</strong></h4>
+<section id="windows" class="level4">
+<h4 class="anchored" data-anchor-id="windows"><strong>Windows</strong></h4>
 <ol type="1">
 <li>Download the installer from the <a href="https://code.visualstudio.com/">official VSCode website</a>.</li>
 <li>Run the installer and follow the prompts.</li>
@@ -362,8 +281,8 @@ sudo make altinstall</code></pre>
 </ul></li>
 </ol>
 </section>
-<section id="linux-ubuntu-1" class="level4">
-<h4 class="anchored" data-anchor-id="linux-ubuntu-1"><strong>Linux (Ubuntu)</strong></h4>
+<section id="linux-ubuntu" class="level4">
+<h4 class="anchored" data-anchor-id="linux-ubuntu"><strong>Linux (Ubuntu)</strong></h4>
 <ol type="1">
 <li><p>Download the latest <code>.deb</code> package from the <a href="https://code.visualstudio.com/Download">official VSCode website</a>.</p></li>
 <li><p>Install the <code>.deb</code> package using <strong>Terminal</strong>:</p>
@@ -384,8 +303,8 @@ sudo apt-get install -f</code></pre></li>
 </ul></li>
 </ol>
 </section>
-<section id="macos-1" class="level4">
-<h4 class="anchored" data-anchor-id="macos-1"><strong>macOS</strong></h4>
+<section id="macos" class="level4">
+<h4 class="anchored" data-anchor-id="macos"><strong>macOS</strong></h4>
 <ol type="1">
 <li>Download the installer from the <a href="https://code.visualstudio.com/">official VSCode website</a>.</li>
 <li>Open the downloaded file and drag the VSCode icon into the <strong>Applications</strong> folder.</li>
@@ -404,65 +323,176 @@ sudo apt-get install -f</code></pre></li>
 <li>Click <strong>“Install”</strong> for each.</li>
 </ul></li>
 </ol>
-<hr>
 </section>
 </section>
-<section id="poetry" class="level3">
-<h3 class="anchored" data-anchor-id="poetry">Poetry</h3>
-<hr>
+<section id="python" class="level3">
+<h3 class="anchored" data-anchor-id="python"><strong>Python</strong></h3>
+<section id="windows-1" class="level4">
+<h4 class="anchored" data-anchor-id="windows-1"><strong>Windows</strong></h4>
+<ol type="1">
+<li>Download Python 3.12.8 from the <a href="https://www.python.org/downloads/release/python-3125/">official Python website</a>.</li>
+<li>Run the installer. During installation:
+<ul>
+<li>Check the box that says <strong>“Add Python to PATH”</strong> before clicking <strong>“Install Now”</strong>.</li>
+<li>Ensure <strong>“Install launcher for all users”</strong> is selected.</li>
+</ul></li>
+<li>Verify the installation:
+<ul>
+<li><p>Open <strong>Command Prompt</strong> and type:</p>
+<pre><code>python --version</code></pre>
+<p>or</p>
+<pre><code>python3 --version</code></pre></li>
+<li><p>Ensure it outputs <code>Python 3.12.8</code>.</p></li>
+</ul></li>
+</ol>
+</section>
+<section id="linux-ubuntu-1" class="level4">
+<h4 class="anchored" data-anchor-id="linux-ubuntu-1"><strong>Linux (Ubuntu)</strong></h4>
+<p>To install Python 3.12.8 from source:</p>
+<ol type="1">
+<li><p>Update your system packages by running:</p>
+<pre><code>sudo apt update &amp;&amp; sudo apt upgrade</code></pre></li>
+<li><p>Install the necessary dependencies with:</p>
+<pre><code>sudo apt install -y build-essential libssl-dev zlib1g-dev \
+libncurses5-dev libnss3-dev libsqlite3-dev libreadline-dev \
+libffi-dev curl libbz2-dev</code></pre></li>
+<li><p>Download the source code for Python 3.12.8 from the official website:</p>
+<pre><code>curl -O https://www.python.org/ftp/python/3.12.8/Python-3.12.8.tgz</code></pre></li>
+<li><p>Extract the downloaded tarball and navigate into the directory:</p>
+<pre><code>tar -xf Python-3.12.8.tgz
+cd Python-3.12.8</code></pre></li>
+<li><p>Build and install Python:</p>
+<pre><code>./configure --enable-optimizations
+make -j$(nproc)
+sudo make altinstall</code></pre>
+<p><strong>Note:</strong> Use <code>altinstall</code> to avoid overwriting the system’s default Python.</p></li>
+<li><p>Verify the installation by typing:</p>
+<pre><code>python3.12 --version</code></pre>
+<p>Ensure it outputs <code>Python 3.12.8</code>.</p></li>
+</ol>
+</section>
+<section id="macos-1" class="level4">
+<h4 class="anchored" data-anchor-id="macos-1"><strong>macOS</strong></h4>
+<ol type="1">
+<li>Download Python 3.12.8 from the <a href="https://www.python.org/downloads/release/python-3125/">official Python website</a>.</li>
+<li>Open the downloaded <code>.pkg</code> file and follow the on-screen installation instructions.</li>
+<li>Verify the installation:
+<ul>
+<li><p>Open <strong>Terminal</strong> and type:</p>
+<pre><code>python3 --version</code></pre></li>
+<li><p>Ensure it outputs <code>Python 3.12.8</code>.</p></li>
+</ul></li>
+</ol>
+<p><strong>Important Note:</strong></p>
+<p>Python 3.12.8 will be the default version used by the ACM Student Chapter for events and workshops. However, please check your course syllabus to ensure you are using the version specified by your instructor, if different.</p>
+</section>
+</section>
+<section id="visual-studio-code-vscode-1" class="level3">
+<h3 class="anchored" data-anchor-id="visual-studio-code-vscode-1"><strong>Visual Studio Code (VSCode)</strong></h3>
 <section id="windows-2" class="level4">
 <h4 class="anchored" data-anchor-id="windows-2"><strong>Windows</strong></h4>
 <ol type="1">
-<li><p>Open Command Prompt or PowerShell.</p></li>
-<li><p>Install Poetry using the official installer:</p>
-<pre><code>curl -sSL https://install.python-poetry.org | python3 -</code></pre></li>
-<li><p>Add Poetry to your PATH by editing your environment variables or following the on-screen instructions after installation.</p></li>
-<li><p>Verify the installation:</p>
-<pre><code>poetry --version</code></pre></li>
+<li>Download the installer from the <a href="https://code.visualstudio.com/">official VSCode website</a>.</li>
+<li>Run the installer and follow the prompts.</li>
+<li>Install recommended extensions:
+<ul>
+<li>Open VSCode, go to the <strong>Extensions</strong> view (<code>Ctrl+Shift+X</code>), and search for the following:
+<ul>
+<li>“Intellicode”</li>
+<li>“Intellicode API Usage Examples”</li>
+<li>“Python”</li>
+<li>“Jupyter”</li>
+<li>“Markdown All in One”</li>
+<li>“Rainbow CSV”</li>
+<li>“Ruff”</li>
+</ul></li>
+<li>Click <strong>“Install”</strong> for each.</li>
+</ul></li>
 </ol>
 </section>
 <section id="linux-ubuntu-2" class="level4">
 <h4 class="anchored" data-anchor-id="linux-ubuntu-2"><strong>Linux (Ubuntu)</strong></h4>
 <ol type="1">
-<li><p>Open a terminal.</p></li>
-<li><p>Install Poetry:</p>
-<pre><code>curl -sSL https://install.python-poetry.org | python3 -</code></pre></li>
-<li><p>Add Poetry to your PATH:</p>
-<pre><code>export PATH="$HOME/.local/bin:$PATH"</code></pre></li>
-<li><p>Verify the installation:</p>
-<pre><code>poetry --version</code></pre></li>
+<li><p>Download the latest <code>.deb</code> package from the <a href="https://code.visualstudio.com/Download">official VSCode website</a>.</p></li>
+<li><p>Install the <code>.deb</code> package using <strong>Terminal</strong>:</p>
+<pre><code>sudo dpkg -i code_*.deb
+sudo apt-get install -f</code></pre></li>
+<li><p>Open VSCode and install recommended extensions:</p>
+<ul>
+<li>Go to the <strong>Extensions</strong> view (<code>Ctrl+Shift+X</code>), search for the following, and click <strong>“Install”</strong>:
+<ul>
+<li>“Intellicode”</li>
+<li>“Intellicode API Usage Examples”</li>
+<li>“Python”</li>
+<li>“Jupyter”</li>
+<li>“Markdown All in One”</li>
+<li>“Rainbow CSV”</li>
+<li>“Ruff”</li>
+</ul></li>
+</ul></li>
 </ol>
 </section>
 <section id="macos-2" class="level4">
 <h4 class="anchored" data-anchor-id="macos-2"><strong>macOS</strong></h4>
 <ol type="1">
-<li><p>Open Terminal.</p></li>
-<li><p>Install Poetry:</p>
-<pre><code>curl -sSL https://install.python-poetry.org | python3 -</code></pre></li>
-<li><p>Add Poetry to your PATH if necessary.</p></li>
-<li><p>Verify the installation:</p>
-<pre><code>poetry --version</code></pre></li>
+<li>Download the installer from the <a href="https://code.visualstudio.com/">official VSCode website</a>.</li>
+<li>Open the downloaded file and drag the VSCode icon into the <strong>Applications</strong> folder.</li>
+<li>Install recommended extensions:
+<ul>
+<li>Open VSCode, go to the <strong>Extensions</strong> view (<code>Cmd+Shift+X</code>), and search for the following:
+<ul>
+<li>“Intellicode”</li>
+<li>“Intellicode API Usage Examples”</li>
+<li>“Python”</li>
+<li>“Jupyter”</li>
+<li>“Markdown All in One”</li>
+<li>“Rainbow CSV”</li>
+<li>“Ruff”</li>
+</ul></li>
+<li>Click <strong>“Install”</strong> for each.</li>
+</ul></li>
 </ol>
-<hr>
 </section>
 </section>
-<section id="gatorgrade" class="level3">
-<h3 class="anchored" data-anchor-id="gatorgrade">Gatorgrade</h3>
-<hr>
-<section id="windows-linux-ubuntu-macos" class="level4">
-<h4 class="anchored" data-anchor-id="windows-linux-ubuntu-macos"><strong>Windows, Linux (Ubuntu), macOS</strong></h4>
+<section id="ollama-installation" class="level3">
+<h3 class="anchored" data-anchor-id="ollama-installation"><strong>Ollama Installation</strong></h3>
+<section id="windows-3" class="level4">
+<h4 class="anchored" data-anchor-id="windows-3"><strong>Windows</strong></h4>
 <ol type="1">
-<li><p>Ensure Python 3.8 or later is installed.</p></li>
-<li><p>Install Gatorgrade globally using pip:</p>
-<pre><code>pip install gatorgrade</code></pre></li>
-<li><p>Verify the installation:</p>
-<pre><code>gatorgrade --help</code></pre></li>
+<li><p>Download the latest Windows installer from <a href="https://ollama.ai/download">Ollama’s website</a>.</p></li>
+<li><p>Run the installer and follow the prompts.</p></li>
+<li><p>Verify installation by opening Command Prompt and typing:</p>
+<pre><code>ollama --version</code></pre></li>
 </ol>
-<hr>
-<p>By completing these setup steps, you’ll be well-prepared for your CMPSC 102 coursework. If you encounter any issues, feel free to reach out through the course’s Discord channel or attend the ACM SOS Week sessions for assistance.</p>
-
-
 </section>
+<section id="linux" class="level4">
+<h4 class="anchored" data-anchor-id="linux"><strong>Linux</strong></h4>
+<ol type="1">
+<li><p>Open Terminal and run:</p>
+<pre><code>curl -fsSL https://ollama.ai/install.sh | sh</code></pre></li>
+<li><p>Verify installation:</p>
+<pre><code>ollama --version</code></pre></li>
+</ol>
+</section>
+<section id="macos-3" class="level4">
+<h4 class="anchored" data-anchor-id="macos-3"><strong>macOS</strong></h4>
+<ol type="1">
+<li><p>Download the macOS application from <a href="https://ollama.ai/download">Ollama’s website</a>.</p></li>
+<li><p>Open the downloaded file and drag the Ollama icon to your Applications folder.</p></li>
+<li><p>Launch Ollama from your Applications folder.</p></li>
+<li><p>Open Terminal and verify with:</p>
+<pre><code>ollama --version</code></pre></li>
+</ol>
+</section>
+</section>
+<section id="additional-resources" class="level3">
+<h3 class="anchored" data-anchor-id="additional-resources"><strong>Additional Resources</strong></h3>
+<ul>
+<li><a href="https://github.com/ollama/ollama">Ollama Documentation</a></li>
+</ul>
+<p>If you encounter issues with any installations, please arrive 15 minutes early to the workshop, and we’ll help you get set up.</p>
+
+
 </section>
 </section>
 </section>
@@ -558,7 +588,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/ac-acm\.netlify\.app\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

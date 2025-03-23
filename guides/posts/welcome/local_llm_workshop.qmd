@@ -1,0 +1,267 @@
+---
+title: "Personal Chatbot Workshop"
+author: "Allegheny College ACM Student Chapter"
+date: "2025-04-09"
+categories: [workshop]
+---
+
+# **Personal Chatbot Workshop**
+
+## **Event Details**
+
+- **Date:** April 9, 2025
+- **Time:** 4:00 PM – 6:00 PM
+- **Location:** Alden Hall, Room 101
+- **Instructor:** Alish Chhetri
+
+## **Workshop Purpose**
+
+This workshop will show participants how to set up their own personal AI chatbot on their computer using a tool called Ollama and the Deepseek language model. The goal is to make it as simple as possible for anyone, including those with no coding or AI experience, to run a chatbot similar to ChatGPT entirely on their own machine.
+
+## **What Will Be Covered**
+
+### **What We're Building**
+A basic personal chatbot that you can run on your computer, talk to, and customize.
+
+### **Getting Set Up**
+
+Installing the required tools:
+
+- Visual Studio Code
+- Python
+- Ollama
+
+### **Downloading the Model**
+Using Ollama to download and run the Deepseek model.
+
+### **Using the Chatbot**
+How to talk to your chatbot through the terminal or a simple interface.
+
+### **Basic Customization**
+Editing a few lines to change how the chatbot responds or what kind of personality it has.
+
+## **Requirements for Participants**
+
+- Visual Studio Code installed
+- Python 3.12.8
+- No coding or technical experience needed
+
+## **Expected Outcomes**
+
+By the end of the session, participants will:
+
+- Have a working AI chatbot running on their own computer
+- Understand how to use it and adjust its basic behavior
+- Feel confident experimenting with it on their own after the workshop
+
+## **Pre-Workshop Setup**
+
+Please install the following software before attending the workshop to ensure a smooth experience:
+
+### **Visual Studio Code (VSCode)**
+
+#### **Windows**
+
+1. Download the installer from the [official VSCode website](https://code.visualstudio.com/).
+2. Run the installer and follow the prompts.
+3. Install recommended extensions:
+   - Open VSCode, go to the **Extensions** view (`Ctrl+Shift+X`), and search for the following:
+     - "Intellicode"
+     - "Intellicode API Usage Examples"
+     - "Python"
+     - "Jupyter"
+     - "Markdown All in One"
+     - "Rainbow CSV"
+     - "Ruff"
+   - Click **"Install"** for each.
+
+#### **Linux (Ubuntu)**
+
+1. Download the latest `.deb` package from the [official VSCode website](https://code.visualstudio.com/Download).
+2. Install the `.deb` package using **Terminal**:
+   ```
+   sudo dpkg -i code_*.deb
+   sudo apt-get install -f
+   ```
+3. Open VSCode and install recommended extensions:
+   - Go to the **Extensions** view (`Ctrl+Shift+X`), search for the following, and click **"Install"**:
+     - "Intellicode"
+     - "Intellicode API Usage Examples"
+     - "Python"
+     - "Jupyter"
+     - "Markdown All in One"
+     - "Rainbow CSV"
+     - "Ruff"
+
+#### **macOS**
+
+1. Download the installer from the [official VSCode website](https://code.visualstudio.com/).
+2. Open the downloaded file and drag the VSCode icon into the **Applications** folder.
+3. Install recommended extensions:
+   - Open VSCode, go to the **Extensions** view (`Cmd+Shift+X`), and search for the following:
+     - "Intellicode"
+     - "Intellicode API Usage Examples"
+     - "Python"
+     - "Jupyter"
+     - "Markdown All in One"
+     - "Rainbow CSV"
+     - "Ruff"
+   - Click **"Install"** for each.
+
+### **Python**
+
+#### **Windows**
+
+1. Download Python 3.12.8 from the [official Python website](https://www.python.org/downloads/release/python-3125/).
+2. Run the installer. During installation:
+   - Check the box that says **"Add Python to PATH"** before clicking **"Install Now"**.
+   - Ensure **"Install launcher for all users"** is selected.
+3. Verify the installation:
+   - Open **Command Prompt** and type:
+     ```
+     python --version
+     ```
+     or
+     ```
+     python3 --version
+     ```
+   - Ensure it outputs `Python 3.12.8`.
+
+#### **Linux (Ubuntu)**
+
+To install Python 3.12.8 from source:
+
+1. Update your system packages by running:
+   ```
+   sudo apt update && sudo apt upgrade
+   ```
+2. Install the necessary dependencies with:
+   ```
+   sudo apt install -y build-essential libssl-dev zlib1g-dev \
+   libncurses5-dev libnss3-dev libsqlite3-dev libreadline-dev \
+   libffi-dev curl libbz2-dev
+   ```
+3. Download the source code for Python 3.12.8 from the official website:
+   ```
+   curl -O https://www.python.org/ftp/python/3.12.8/Python-3.12.8.tgz
+   ```
+4. Extract the downloaded tarball and navigate into the directory:
+   ```
+   tar -xf Python-3.12.8.tgz
+   cd Python-3.12.8
+   ```
+5. Build and install Python:
+   ```
+   ./configure --enable-optimizations
+   make -j$(nproc)
+   sudo make altinstall
+   ```
+   **Note:** Use `altinstall` to avoid overwriting the system's default Python.
+6. Verify the installation by typing:
+   ```
+   python3.12 --version
+   ```
+   Ensure it outputs `Python 3.12.8`.
+
+#### **macOS**
+
+1. Download Python 3.12.8 from the [official Python website](https://www.python.org/downloads/release/python-3125/).
+2. Open the downloaded `.pkg` file and follow the on-screen installation instructions.
+3. Verify the installation:
+   - Open **Terminal** and type:
+     ```
+     python3 --version
+     ```
+   - Ensure it outputs `Python 3.12.8`.
+
+**Important Note:**
+
+Python 3.12.8 will be the default version used by the ACM Student Chapter for events and workshops. However, please check your course syllabus to ensure you are using the version specified by your instructor, if different.
+
+### **Visual Studio Code (VSCode)**
+
+#### **Windows**
+
+1. Download the installer from the [official VSCode website](https://code.visualstudio.com/).
+2. Run the installer and follow the prompts.
+3. Install recommended extensions:
+   - Open VSCode, go to the **Extensions** view (`Ctrl+Shift+X`), and search for the following:
+     - "Intellicode"
+     - "Intellicode API Usage Examples"
+     - "Python"
+     - "Jupyter"
+     - "Markdown All in One"
+     - "Rainbow CSV"
+     - "Ruff"
+   - Click **"Install"** for each.
+
+#### **Linux (Ubuntu)**
+
+1. Download the latest `.deb` package from the [official VSCode website](https://code.visualstudio.com/Download).
+2. Install the `.deb` package using **Terminal**:
+   ```
+   sudo dpkg -i code_*.deb
+   sudo apt-get install -f
+   ```
+3. Open VSCode and install recommended extensions:
+   - Go to the **Extensions** view (`Ctrl+Shift+X`), search for the following, and click **"Install"**:
+     - "Intellicode"
+     - "Intellicode API Usage Examples"
+     - "Python"
+     - "Jupyter"
+     - "Markdown All in One"
+     - "Rainbow CSV"
+     - "Ruff"
+
+#### **macOS**
+
+1. Download the installer from the [official VSCode website](https://code.visualstudio.com/).
+2. Open the downloaded file and drag the VSCode icon into the **Applications** folder.
+3. Install recommended extensions:
+   - Open VSCode, go to the **Extensions** view (`Cmd+Shift+X`), and search for the following:
+     - "Intellicode"
+     - "Intellicode API Usage Examples"
+     - "Python"
+     - "Jupyter"
+     - "Markdown All in One"
+     - "Rainbow CSV"
+     - "Ruff"
+   - Click **"Install"** for each.
+
+### **Ollama Installation**
+
+#### **Windows**
+
+1. Download the latest Windows installer from [Ollama's website](https://ollama.ai/download).
+2. Run the installer and follow the prompts.
+3. Verify installation by opening Command Prompt and typing:
+   ```
+   ollama --version
+   ```
+
+#### **Linux**
+
+1. Open Terminal and run:
+   ```
+   curl -fsSL https://ollama.ai/install.sh | sh
+   ```
+2. Verify installation:
+   ```
+   ollama --version
+   ```
+
+#### **macOS**
+
+1. Download the macOS application from [Ollama's website](https://ollama.ai/download).
+2. Open the downloaded file and drag the Ollama icon to your Applications folder.
+3. Launch Ollama from your Applications folder.
+4. Open Terminal and verify with:
+   ```
+   ollama --version
+   ```
+
+### **Additional Resources**
+
+- [Ollama Documentation](https://github.com/ollama/ollama)
+
+If you encounter issues with any installations, please arrive 15 minutes early to the workshop, and we'll help you get set up.

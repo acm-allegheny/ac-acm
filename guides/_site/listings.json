@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/welcome/local_llm_workshop.html",
       "/posts/welcome/website_workshop.html",
       "/posts/welcome/100.html",
       "/posts/welcome/405.html",
