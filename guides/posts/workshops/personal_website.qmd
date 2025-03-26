@@ -1,0 +1,183 @@
+---
+title: "Personal Website Workshop"
+author: "Allegheny College ACM Student Chapter"
+date: "2025-04-02"
+categories: [workshop]
+---
+
+# **Personal Website Workshop**
+
+## **Event Details**
+
+- **Date:** April 02, 2025
+- **Time:** 4:00 PM – 6:00 PM
+- **Location:** Alden Hall, Room 101
+- **Instructor:** Alish Chhetri
+
+## **Workshop Purpose**
+
+This workshop is designed to help participants create and publish a simple personal website using basic HTML and CSS, with optional JavaScript. The goal is to introduce core web development concepts in a clear, beginner-friendly format, and help attendees get their site live by the end of the session.
+
+## **What Will Be Covered**
+
+### **Introduction to HTML**
+Understanding the structure of a webpage and learning how to add text, links, images, and sections.
+
+### **Basic CSS Styling**
+How to style the page with colors, fonts, layout techniques, and simple visual adjustments.
+
+### **Hosting with Netlify**
+How to upload the finished website to Netlify using the drag-and-drop method, and make it publicly accessible. We'll also cover basic updates and custom domain setup.
+
+## **Requirements for Participants**
+
+- Visual Studio Code (code editor)
+- No prior coding experience is required
+
+## **Expected Outcomes**
+
+By the end of the workshop, participants will:
+
+- Understand the basics of how websites are built and styled
+- Create a simple personal site with their own content
+- Successfully publish their site using Netlify
+- Gain confidence to continue learning and expanding their site
+
+---
+
+## **Pre-Workshop Setup**
+
+Please install the following software before attending the workshop to ensure a smooth experience:
+
+### **Required Software**
+
+#### **Visual Studio Code (VSCode)**
+
+##### **Windows**
+
+1. Download the installer from the [official VSCode website](https://code.visualstudio.com/).
+2. Run the installer and follow the prompts.
+3. Install recommended extensions:
+   - Open VSCode, go to the **Extensions** view (`Ctrl+Shift+X`), and search for the following:
+     - "Live Server"
+     - "Intellicode"
+     - "Intellicode API Usage Examples"
+   - Click **"Install"** for each.
+
+##### **Linux (Ubuntu)**
+
+1. Download the latest `.deb` package from the [official VSCode website](https://code.visualstudio.com/Download).
+2. Install the `.deb` package using **Terminal**:
+   ```
+   sudo dpkg -i code_*.deb
+   sudo apt-get install -f
+   ```
+3. Install recommended extensions as described above.
+
+##### **macOS**
+
+1. Download the installer from the [official VSCode website](https://code.visualstudio.com/).
+2. Open the downloaded file and drag the VSCode icon into the **Applications** folder.
+3. Install recommended extensions as described above.
+
+#### **Git and GitHub**
+
+##### **Windows**
+
+1. Download Git from [git-scm.com](https://git-scm.com/download/win).
+2. Run the installer, accepting the default options (you can customize if you're familiar with Git).
+3. Create a GitHub account at [github.com](https://github.com/signup) if you don't have one.
+4. Configure Git with your name and email:
+   ```
+   git config --global user.name "Your Name"
+   git config --global user.email "your.email@example.com"
+   ```
+
+##### **Linux (Ubuntu)**
+
+1. Install Git using Terminal:
+   ```
+   sudo apt update
+   sudo apt install git
+   ```
+2. Create a GitHub account at [github.com](https://github.com/signup) if you don't have one.
+3. Configure Git with your name and email as shown above.
+
+##### **macOS**
+
+1. Install Git using one of these methods:
+   - Using Homebrew (if installed): `brew install git`
+   - Download from [git-scm.com](https://git-scm.com/download/mac)
+2. Create a GitHub account at [github.com](https://github.com/signup) if you don't have one.
+3. Configure Git with your name and email as shown above.
+
+### **Optional Software (for Quarto approach)**
+
+#### **Quarto**
+
+##### **Windows**
+
+1. Download the installer from the [Quarto website](https://quarto.org/docs/get-started/).
+2. Run the installer and follow the prompts.
+3. Verify installation by opening Command Prompt and typing:
+   ```
+   quarto --version
+   ```
+
+##### **Linux**
+
+1. Download the Linux package from the [Quarto website](https://quarto.org/docs/get-started/).
+2. Extract and install:
+   ```
+   sudo dpkg -i quarto-*.deb
+   ```
+3. Verify with `quarto --version`.
+
+##### **macOS**
+
+1. Download the macOS installer from the [Quarto website](https://quarto.org/docs/get-started/).
+2. Open the downloaded file and follow installation instructions.
+3. Verify with `quarto --version`.
+
+#### **Node.js and npm**
+
+##### **Windows**
+
+1. Download the LTS installer from [nodejs.org](https://nodejs.org/).
+2. Run the installer, accepting the default options.
+3. Verify installation:
+   ```
+   node --version
+   npm --version
+   ```
+
+##### **Linux (Ubuntu)**
+
+1. Install via Terminal:
+   ```
+   sudo apt update
+   sudo apt install nodejs npm
+   ```
+2. Verify installation as above.
+
+##### **macOS**
+
+1. Download the LTS installer from [nodejs.org](https://nodejs.org/).
+2. Run the installer and follow the prompts.
+3. Verify installation as above.
+
+#### **Netlify Account (Optional)**
+
+1. Go to [netlify.com](https://www.netlify.com/).
+2. Click **"Sign Up"** and create a free account.
+3. You can sign up using your GitHub account (recommended) or email address.
+
+### **Additional Resources**
+
+- [HTML Basics - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
+- [CSS Basics - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
+- [Git Basics - GitHub Docs](https://docs.github.com/en/get-started/quickstart/set-up-git)
+- [Quarto Documentation](https://quarto.org/docs/guide/)
+- [Introduction to Netlify](https://docs.netlify.com/get-started/)
+
+If you encounter issues with any installations, please arrive 15 minutes early to the workshop, and we'll help you get set up.

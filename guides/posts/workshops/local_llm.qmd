@@ -88,9 +88,6 @@ Please install the following software before attending the workshop to ensure a 
      - "Intellicode"
      - "Intellicode API Usage Examples"
      - "Python"
-     - "Jupyter"
-     - "Markdown All in One"
-     - "Rainbow CSV"
      - "Ruff"
 
 #### **macOS**
