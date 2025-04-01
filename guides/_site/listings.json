@@ -2,15 +2,15 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/welcome/local_llm_workshop.html",
-      "/posts/welcome/website_workshop.html",
-      "/posts/welcome/100.html",
-      "/posts/welcome/405.html",
-      "/posts/welcome/102.html",
-      "/posts/welcome/302.html",
-      "/posts/welcome/202.html",
-      "/posts/welcome/101.html",
-      "/posts/welcome/105.html"
+      "/posts/workshops/local_llm.html",
+      "/posts/workshops/personal_website.html",
+      "/posts/classes/100.html",
+      "/posts/classes/405.html",
+      "/posts/classes/102.html",
+      "/posts/classes/302.html",
+      "/posts/classes/202.html",
+      "/posts/classes/101.html",
+      "/posts/classes/105.html"
     ]
   }
 ]

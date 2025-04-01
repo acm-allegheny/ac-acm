@@ -18,6 +18,8 @@ categories: [workshop]
 
 This workshop is designed to help participants create and publish a simple personal website using basic HTML and CSS, with optional JavaScript. The goal is to introduce core web development concepts in a clear, beginner-friendly format, and help attendees get their site live by the end of the session.
 
+Slides: [Workshop Slides](https://docs.google.com/presentation/d/1fNOEq5sTVyJYYQz9q6vDxKX2aCDGY8SY19cbWqQSqn4/edit?usp=sharing)
+
 ## **What Will Be Covered**
 
 ### **Introduction to HTML**
